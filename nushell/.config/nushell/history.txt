@@ -1,0 +1,1189 @@
+wxit
+exit
+$nu.config-path
+nvim /home/rio/.config/nushell/config.nu
+exit
+starship preset tokyo-night -o ~/.config/starship.toml
+ls
+go
+pacman -S luarocks
+sudo pacman -S luarocks
+ls
+pwd
+cd ~/.config/
+ls
+git clone https://github.com/rioten353/rioten353.git
+ls
+pwd
+ls
+git clone https://github.com/rioten353/rioten353/nvim.git
+git clone https://github.com/rioten353/nvim.git
+ls
+pwd
+cd ~/.config/nvim/
+nvim
+cd 
+ls
+cd Downloads/
+ls
+unzip Tokyonight-Moon-Icons.zip
+exit
+sudo shutdown now
+rm -rf .cache/
+rm .Xauthority
+rm .ICEauthority
+htop
+nvim /etc/environment
+shutdown now
+pacman -Syu
+sudo pacman -Syyu
+sudo pacman -Syu
+sudo pacman -Sy
+sudo yay -Sy
+ls
+nvim ~/.bashrc
+sudo reboot now
+pacman -Syu
+sudo pacman -Syu
+sudo pacman-key --refresh-keys
+sudo pacman -Syu
+sudo rm /var/lib/pacman/db.lck
+sudo pacman -Syu
+pacman -S wezterm
+sudo pacman -S wezterm
+exit
+ls
+cd ~/.config/nvim/
+nvim
+exit
+ls
+pwd
+sys
+show disk
+ls
+yay -Ss visual-studio-code
+yay -Ss zed
+nvim ~/.wezterm.lua
+exit
+ls
+du
+cd
+du
+exit
+nu
+ls
+exit
+ps
+htop
+fastfetch
+sys
+sys disks
+sys host
+sys cpu
+sys mem
+sys net
+sys temp
+ls
+pwd
+ll
+ls
+exit
+ls
+sys
+sys mem\
+sys mem
+yay -Ss visual-studio-code
+yay -Ss zed
+yay -S zed
+pacman -S clang
+sudo pacman -S clang eslint pyright rust-analyzer
+zed
+yay -Rns zed
+nvim ~/.wezterm.lua
+ls
+exit
+ls
+cd ~/.config/nvim/
+nvim
+ls
+nvim ~/.wezterm.lua
+ls
+exit
+cd ~/.config/nvim/
+nvim
+go
+go --version
+go version
+yay -S dart
+dart
+dart --version
+ls
+pws
+pwd
+cd
+ls
+du
+ls
+ls go/
+mkdir coding
+mkdir coding/dart
+cd coding/dart/
+dart create apps
+cd apps/
+dart run
+nvim
+pacman -S ripgrep
+sudp pacman -S ripgrep
+sudo pacman -S ripgrep
+sudo pacman -S fzf
+fzf
+nvim
+pacman -S lua
+sudo pacman -S lua
+sudo pacman -S lua-5.1
+yay -Ss lua
+sudo pacman -S lua51
+nvim
+ls
+htop
+dart --version
+python --version
+python3 --version
+ls
+wxit
+exit
+ls
+pwd
+ls
+cat lib/main.dart
+yay -Ss bat
+pacman -Ss bat
+yay -Ss lsd
+yay -S lsd
+lsd
+lsd -a
+ls
+lsd
+yay -S bat
+ls
+lsd
+bat lib/main.dart
+fzf
+fzf --preview="bat" {}
+fzf --preview="bat {}"
+tmux
+yay -S tmux
+nvim $(fzf --preview="bat --color=always {}")
+ls
+pwd
+exit
+nvim ~/.bashrc
+exit
+$nu.config-path
+$nu.env-path
+z
+$nu.env-path
+nvim /home/rio/.config/nushell/env.nu
+$nu.config-path
+nvim /home/rio/.config/nushell/config.nu
+exit
+z
+z nvim
+git status
+fzf --preview="bat {}"
+sys disks
+ls
+pwd
+ll
+fzf
+ls
+du
+cd .cache/
+ls
+lsd
+cd
+pwd
+curl
+wget
+ssh
+tmux
+exit
+fastfetch
+ls
+lsd
+curl wttr.in/Thane
+curl wttr.in/Kalyan
+pwd
+lsd
+yay -Ss kitty
+lsd
+pwd
+lsd
+nvim ~/.wezterm.lua
+z ~/.config/starship.toml
+z ~/.config/
+ls
+nvim starship.toml
+ls
+pwd
+cd Downloads/
+cd
+z Downloads/
+ls
+unzip Tokyonight-Dark-B-LB.zip
+thunar
+ls
+rm -rf Tokyonight-Dark-B-LB.zip Tokyonight-Dark Tokyonight-Dark-hdpi Tokyonight-Dark-xhdpi
+ls
+tar -xzf Sweet-Ambar-Blue-Dark.tar.xz
+tar -xf Sweet-Ambar-Blue-Dark.tar.xz
+ls
+tar -xf candy-icons.tar.xz
+ls
+history
+exit
+nu
+history
+gtk-update-icon-cache -f -t /home/rio/.icons/candy-icons/
+nvim ~/.bashrc
+exit
+git status
+git commit -m "pyright added"
+git config --global user.email "rioten353@gmail.com"
+git config --global user.name "Rio"
+git commit -m "pyright added"
+git status
+ping google.com
+nvim
+z python
+z ~/coding/python/games/
+ls
+source env/bin/activate
+pwd
+exit
+ps
+exit
+ls
+pwd
+paru -S lsd
+lsd
+sys disks
+lsblk
+cd
+starship preset tokyo-night -o ~/.config/starship.toml
+ls
+z .config
+ls
+nvim starship.toml
+ls
+pwd
+cany --lausb
+history
+history | grep lsusb
+history | grep --lsusb
+history | grep "--lsusb"
+history > history_for_print.txt
+exit
+camy --lausb
+nvim history_for_print.txt
+cyme --lsusb
+paru -Ss bluez
+paru -S bluez
+paru -S bluez-utils
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+sudo systemctl status bluetooth.service
+bluetoothctl
+paru -Qs blueman
+nvidia-smi
+htop
+paru -Ss nvtop
+paru -S nvtop
+lsmod | grep nvidia
+nvim /var/log/Xorg.0.log
+nvim /etc/x11/xorg.d
+nvim /etc/X11/xorg.conf.d/
+nvim /etc/X11/xorg.conf.d
+z /etc/X11/xorg.conf.d
+ls
+nvim 20-nvidia.conf
+sudo nvim 20-nvidia.conf
+nvidia-smi
+nvtop
+dmesg | grep nvidia
+sudo dmesg | grep nvidia
+uname -r
+uname -
+uname
+CONFIG_MODULE_SIG_KEY
+exit
+fastfetch
+lspci -k -d ::03xx
+pacman -Qs xf86-video-nouveau
+sudo pacman -Rns xf86-video-nouveau
+z /etc/modprobe.d/
+ls
+nvim
+sudo nvim
+sudo nvim blacklist-r8188eu.conf
+sudo nvim blacklist-rtl8xxxu.conf
+sudo reboot now
+lspci -k -d ::03xx
+z /etc/modprobe.d/
+nvim blacklist-r8188eu.conf
+sudo nvim blacklist-r8188eu.conf
+sudo nvim blacklist-rtl8xxxu.conf
+lspci -k -d ::03xx
+lsmod | grep nvidia
+lsmod | grep nouveau
+dkms status
+pacman -Qs nouveau
+pacman -Ss nouveau
+z /etc/modprobe.d/
+sudo nvim blacklist-rtl8xxxu.conf
+sudo nvim blacklist-r8188eu.conf
+sudo paru -Qs nvidia-390xx-dkms nvidia-390xx-utils
+sudo paru -Q nvidia-390xx-dkms nvidia-390xx-utils
+sudo paru -Q nouveau
+sudo paru -Q xf86-video-nouveau
+sudo paru -Rns nvidia-390xx-dkms nvidia-390xx-utils
+nvidia-smi
+dkms status
+dkms 
+nvidia 
+paru -Ss Nouveau
+paru -S Nouveau
+paru -S xf86-video-nouveau
+dkms
+dkms status
+nvidia
+paru -Q nouveau
+sudo reboot now
+exit
+paru -Q nouveau
+paru -q xf86-video-nouveau
+paru -Q xf86-video-nouveau
+paru -Rns xf86-video-nouveau
+exit
+dkms status
+sudo pacman -Sc
+pacman -Sy
+sudo pacman -Sy
+sudo paru -Syyuu
+pwd
+pacman -Sy
+sudo pacman -Sy
+ls
+paru -Ss wezterm
+paru -S wezterm
+htop
+z /etc/default/
+ls
+sudo nvim grub
+sudo grub-makeconfig -o /boot/grub/grub.cfg
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo reboot now
+bluetoothctl
+ls
+tar -xf Dracula-cursors.tar.xz -D ~/.icons/
+tar -xf Dracula-cursors.tar.xz 
+ls
+mv Dracula-cursors ~/.icons/
+paru -S neovide
+paru -Syyuu
+sudo reboot now
+bluetoothctl
+ip a
+cyme --lsusb
+history
+exit
+paru -Ss nvidia390xx
+ls
+git clone git clone --depth 1 https://github.com/makccr/wallpapers ~/.wallpaper/
+git clone git clone --depth 1 https://github.com/makccr/wallpapers ~/.wallpaper
+mkdir ~/.wallpapers
+git clone git clone --depth 1 https://github.com/makccr/wallpapers ~/.wallpaper
+git clone --depth 1 https://github.com/makccr/wallpapers ~/.wallpaper
+ls
+cd Tools/
+z nvim
+git status
+git add .
+sys
+nvim ~/.config/starship.toml
+ls
+nvim ~/.config/starship.toml
+starship preset pure-preset -o ~/.config/starship.toml
+ls
+cd
+ls
+cd Downloads/
+starship preset jetpack -o ~/.config/starship.toml
+camy --lausb
+cany --lausb
+thunar
+ls
+exit
+trash-put flutter_linux_3.29.2-stable.tar.xz
+ls
+python3 --version
+pip
+pip3
+paru -Ss uv
+paru -S uv
+ls
+cd
+ls
+mkdir coding
+mkdir -r coding/python/games
+mkdir coding/python
+mkdir coding/python/games
+z coding/python/games/
+ls
+uv venv
+ls
+ls -a
+uv init window_setup
+ls
+nvim
+ls
+source .venv/bin/activate.nu
+source .venv/bin/activate
+source .venv/bin/activate.nu
+use .venv/bin/activate.nu 
+uv list
+uv pip list
+uv install raylib
+uv pip list
+uv pip install raylib
+uv pip list
+deactivate
+end
+nvim ~/.config/starship.toml
+ls
+pwd
+cp ~/.wezterm.lua ~/.wezterm.lua.bak
+ls -a
+nvim ~/.wezterm.lua
+paru -S ttf-cascadia-code-nerd
+bluetoothctl
+ls -a
+nvim ~/.wezterm.lua
+paru -S ttf-meslo-nerd
+trash-put .git/
+ls
+nvim
+pacman -Ss lua
+ls
+tmux
+sys disks
+fastfetch
+paru -Ss mpv
+paru -S mpv
+paru -Rns mpv
+htop
+trash-put 'Sabdham-(2025)-Hindi-Dubbed-Movie--720p-[Orgmovies].mp4'
+sys disks
+ls
+trash-put FiraCode.zip
+ls
+lsd
+paru -Ss cava
+paru -S cava
+cava
+paru -Ss libraoffoce
+z codinf
+z coding
+cd
+z coding
+mkdir flutter_apps
+cd flutter_apps/
+ls
+flutter create myapp
+z myapp/
+ls
+nvim
+ls
+htop
+ls
+z ~/.wallpapers/
+ls
+z ~/.wallpaper
+ls
+yazi
+cd
+ls
+pwd
+ls
+neovide --no-vsync
+exit
+nvim ~/.config/starship.toml
+exit
+bluetoothctl
+ls
+pwd
+paru -Syyuu
+ls
+paru -Sy
+ls
+pwd
+ls
+nvim ~/.bashrc
+ls
+nvim ~/.bashrc
+exit
+bash
+exit
+ls
+pwd
+ll
+flutter
+ls
+cd Downloads/
+ls
+du
+ls
+yazi
+ls
+yazi
+lsd
+paru -Ss libreoffice-fresh 
+paru -S libreoffice-fresh 
+z
+ls
+lsd
+mkdir backup
+mv history_for_print.txt ./backup/
+ls
+yazi
+paru -Ss vtop
+paru -S vtop
+vtop
+paru -Rns htop
+vtop
+nvidia-smi -l 2
+z python
+z coding/python/
+ls
+uv venv
+pip
+use .venv/bin/activate.nu 
+ls
+du
+uv pip install gpustat
+du
+gpustat
+exit
+z python
+ls
+du
+trash-put .venv/
+ls
+du
+du -h
+fdisk
+lsbkl
+lsblk
+vtop
+z Downloads/
+yazy
+yazi
+clear
+ls
+find . --type f | fzf
+find . -type f | fzf
+clear
+fzf --preview="bat {}"
+ps
+clear
+sys host
+sys
+sys -h
+sys temp
+sys cpu
+sys mem
+vtop
+sys users
+sys mem
+sys temp
+clear
+z
+trash-put Downloads/HyDE
+ls
+du
+tradh --help
+tradh-cli
+clear
+df -h
+sys disks
+trash-empty
+sys disks
+exit
+tmux
+exit
+ls
+exit
+uname -a
+uname 
+pacman -Q | grep linux
+paru -Sy
+paru -S linux-lts linux-lts-headers
+uname
+pacman -Q | grep linux
+grub-mkconfig
+sudo grub-mkconfig
+sudo nvim /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo reboot now
+la
+lsd
+pacman -Q | grep linux
+uname
+sudo nvim /etc/default/grub
+sudo /boot/grub/grub.cfg
+sudo nvim /boot/grub/grub.cfg
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo reboot now
+lsd
+uname
+sudo reboot now
+uname
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo reboot now
+cd Downloads/
+wget https://github.com/dracula/gtk/files/5214870/Dracula.zip
+ls
+unzip Dracula.zip
+lsd
+mv Dracul ~/.icons/
+mv Dracula ~/.icons/
+lsd
+config nu
+nvim ~/.config/nushell/config.nu
+lsd
+ls
+lsd
+pwd
+ld
+lsd
+sudo paru -Syyuu
+paru -Syyuu
+lsd
+sudo reboot now
+ls
+cd backup/
+cd /etc/modprobe.d/
+ls
+nvim blacklist-r8188eu.conf
+sudo nvim blacklist-r8188eu.conf
+sudo nvim blacklist-rtl8xxxu.conf
+sudo reboot now
+vtop
+ls
+vtop
+fastfetch
+paru -Sy
+paru -Ss timeshift
+sys disks
+sys mem
+paru -S timeshift
+sys mem
+ls
+fastfetch
+pacman -Q | grep linux
+pacman -Q | grep lsd
+pacman -Q 
+ls
+echo pacman -Q 
+pacman -Q > backup/packages.txt
+pacman -Q >> backup/packages.txt
+pacman -Q
+pwd
+z .config/
+ls
+l
+la
+ll
+ls
+cd python
+z
+exit
+z python
+ls
+cd python
+cls
+ls
+yazi --no-config
+yazi -- --no-config
+nvim nushell/config.nu
+lsd
+cd nvim
+neovide
+nvim
+paru -Ss lua51
+paru -S lua51
+nvim
+ls
+l
+exit
+exit
+l
+la
+ll
+lla
+sys disks
+fastfetch
+xrandr
+cdpyinfo
+xdpyinfo
+paru -Ss xrandr
+paru -S xrandr
+paru -Syu
+lsd
+l
+lspci -k -d ::03xx
+lspci
+lspci -vnnn
+cyme --lsusb
+ip a
+ipconfig
+ifconfig
+ip addr
+nmap
+iptables
+iptables --help
+l
+pwd
+l
+du
+lsd
+pwd
+head
+lsd
+l
+ls
+uname
+cd /etc/
+ls
+ls | grep hosts
+nvim hosts
+systemctl list-units --type=service --status=running
+systemctl list-units --type=service --state=running
+l
+z
+ls
+lsd
+pwd
+z nushell
+z .config/nushell/
+nvim config.nu
+lsd
+p
+source $nu.config-path
+p
+z
+cls
+pwd
+lsblk
+thunar
+pwd
+p
+curl terminal-stocks.dev/ITC.NS
+curl terminal-stocks.dev/GTL
+curl terminal-stocks.dev/GTLINFRA.NS
+curl terminal-stocks.dev/historical/GTLINFRA.NS
+l
+;a
+la
+vtop
+dart --version
+z .config/lsd/
+ls
+cat colors.yaml
+cat config.yaml
+lsd
+git clone git clone https://github.com/dracula/lsd.git
+git clone https://github.com/dracula/lsd.git
+l
+l lsd/\
+l lsd/
+mv colors.yaml config.yaml ./colors.yaml.bak ./config.yaml.bak
+mv  config.yaml  ./config.yaml.bak
+mv  colors.yaml  ./colors.yaml.bak
+ls
+mv lsd/colors.yaml ./
+mv lsd/config.yaml ./
+ls
+lsd
+l
+z
+l
+ll
+ls
+ll
+la
+neovide
+z .config/lsd/
+lsd
+neovide
+l
+ll
+lsd
+z .config/
+l
+ll
+z .config/
+l
+trash-put lsd
+ls
+l
+ll
+z ..
+ls
+ll
+ls
+ls | grep wezterm
+mkdir wezterm
+cd wezterm/
+git clone https://github.com/dracula/wezterm.git
+l
+ll
+tte
+tree
+paru -Q tree
+paru -S tree
+tree
+thunar
+ls
+nvim config.nu
+nvim ~/.config/nushell/config.nu
+source $nu.config-path
+ls
+nv ~/.wezterm.lua
+ls
+ll
+lsd
+ls
+sys disks
+paru -Ss tldr
+paru -Ss tldr | grep tldr
+man git
+men git
+paru -S tldr
+tldr git
+tldr cd
+curl terminal-stocks.dev/GTLINFRA.NS
+curl wttr.in/Kalyan
+fastfetch 
+z .config/
+ls
+ls | grep tldr
+git clone https://github.com/dracula/tlrc.git
+cd tlrc/
+tree
+tldr cd
+la
+ls
+tree
+cp dracula/config.full.toml ./
+ls
+tldr cd
+v config.full.toml
+tldr cd
+tldr ls
+tldr lsblk
+tldr gdisk
+tldr fdisk
+lsd
+btop
+vtop
+bluetoothctl
+cava
+bluetoothctl
+exit
+vtop
+pacman -Sy
+sudo pacman -Sy
+sudo pacman -Syu
+paru -Sy
+paru -Syu
+lsd
+paru -S rofi
+cls
+pwd
+p
+cls
+exit
+tmux
+paru -S rofi
+rofi
+rofi --show drun
+rofi -show drun
+z .config/
+ls
+ls | grep rofi
+mkdir rofi
+cd rofi/
+touch config.rasi
+v config.rasi
+ls
+v config.rasi
+ls
+bat config.rasi
+rofi -show drun
+v config.rasi
+rofi -show drun
+mv config.rasi ./theme.rasi
+ls
+touch config.rasi
+v config.rasi
+rofi -show drun
+cd ..
+ls
+trash-put rofi
+paru -Rns rofi
+pwd
+git clone https://github.com/JaKooLit/Hyprland-Dots/tree/main/config/rofi
+z Downloads/
+cd ~/Downloads/
+git clone https://github.com/JaKooLit/Hyprland-Dots
+ls
+cd Hyprland-Dots/
+l
+cd config/
+l
+mv rofi ~/.config/
+l
+paru -S rofi
+rofi -show drun
+du
+cd ..
+ls
+l
+trash-put CONTRIBUTING.md LICENSE.md README.md README.jp.md upgrade.sh release.sh copy.sh COMMIT_MESSAGE_GUIDELINES.md CODE_OF_CONDUCT.md 
+l
+trash-put wallpapers/
+l
+trash-put Distro-Hyprland.sh
+l
+z rofi
+ls
+l
+tree
+rofi -show drun
+exit
+rofi -show drun
+nv config.rasi
+ls
+cd rofi
+ls
+sys disks
+yazi
+paru -S btop
+btop
+vtop
+btop
+paru -Rns vtop
+lsd
+l
+c Downloads/
+z Downloads/
+ls
+yazi
+thunar
+fastfetch 
+cd ~/.config/fastfetch/
+ls
+v config.jsonc
+fastfetch 
+v config.jsonc
+fastfetch 
+z Downloads/
+yazi
+q
+cd yazi
+cd .config/
+cd yazi/
+ls
+nv
+yazi
+btop
+pws
+p
+lsd
+l
+fastfetch
+l
+btop
+z rofi
+yazi
+cd ..
+trash-put rofi
+git clone --depth=1 https://github.com/adi1090x/rofi.git
+ls
+cd rofi/
+ls
+bat setup.sh
+sudo chmod +x setup.sh
+./setup.sh
+ls
+cd ..
+ls
+z
+cd Downloads/
+git clone --depth=1 https://github.com/adi1090x/rofi.git
+cd rofi/
+sudo chmod +x setup.sh
+./setup.sh
+z rofi
+ls
+yazi
+cd launchers/
+ls
+l
+z ..
+ls
+yazi
+cd launchers
+l
+la
+ls
+cd type-
+cd ..
+ls
+rofi \<\n>    -show drun \<\n>    -theme ${dir}/${theme}.rasi
+rofi -show drun -theme ${dir}/${theme}.rasi
+rofi -show drun
+yazi
+cd launchers/type-1/
+ls
+sudo chmod +x launcher.sh
+./launcher.sh
+cat launcher.sh
+ls
+z ../type-6/
+ls
+sudo chmod +x launcher.sh
+neovim launcher.sh
+n launcher.sh
+v launcher.sh
+./launcher.sh
+v launcher.sh
+pwd
+z rofi
+ls
+yazi
+d scripts/
+z scripts/
+ls
+sudo chmod +x *.sh
+sudo chmod +x ./*.sh
+l
+tree
+./launcher_t1
+./launcher_t2
+./launcher_t3
+./launcher_t4
+./launcher_t5
+./launcher_t6
+./launcher_t7
+./launcher_t8
+./powermenu_t1
+pwd
+./launcher_t6
+./launcher_t5
+./launcher_t4
+./launcher_t3
+./launcher_t1
+./launcher_t6
+./launcher_t7
+z rofi
+yazi\
+yazi
+ls
+pacman -Qdt
+pacman -Qdtq
+fastfetch
+btop
+exit
+uname
+btop
+exit
+ls
+paru -Sy
+paru -Syu
+paru -S stow
+p
+z
+mkdir dotfiles
+fastfetch
+cd dotfiles/
+ls
+yazi
+ls
+trash-put fastfetch/.config/fastfetch
+tree
+mkdir fastfetch/.config
+tree
+la fastfetch/
+fastfetch
+clear
+ls
+stow fastfetch
+fastfetch 
+nvim ~/.config/nushell/config.nu
+ls
+stow nvim
+nvim ~/.config/nushell/config.nu
+cls
+stow neovide
+ls
+nv ~/.config/nushell/config.nu
+exit
+cls
+l
+stow lsd
+l
+lsd
+btop
+stow btop
+ls
+mv btop ~/.config/
+cls
+stow btop
+btop
+stow cava
+stow rofi
+stow starship
+cd dotfiles/
+l
+mv -r ~/.config/yazi/ ./
+mv  ~/.config/yazi/ ./
+ls
+yazi
+stow yazi
+yazi
+l
+la
+z
+la
+:q
+exit
+tmux
+cd dotfiles/
+ls
+tree tmux/
+stow tmux/
+z dotfiles
+stow wezterm
+yazi
+cd dotfiles
+ls
+stow wezterm_dracula/
+stow icons themes
+tree
+yazi
+stow yazi/
+git status
+git init
+git status
