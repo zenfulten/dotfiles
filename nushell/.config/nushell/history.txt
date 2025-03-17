@@ -1221,3 +1221,19 @@ cd dotfiles
 stow bash
 yazi
 git status
+git add .
+git status
+git commit -m "bash added"
+git push
+git push -u origin main
+touch .gitignore
+nv .gitignore
+git add .
+git commit -m "bash added with fix"
+git push -u origin main
+git commit --amend --all
+git push 
+yazi
+git commit --amend --all
+vi
+paru -S vi
