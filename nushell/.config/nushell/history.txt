@@ -1187,3 +1187,37 @@ stow yazi/
 git status
 git init
 git status
+git add .
+git status
+git commit -m "first stow created"
+git config --global user.email "rioten353@gmail.com"
+git config --global user.name "Rio"
+git commit -m "first stow created"
+git status
+du
+z
+ls
+zip -r dot.zip ./dotfiles
+tldr zip
+7z
+7z -a dotfiles.zip dotfiles
+7z -a dotfiles.zip ./dotfiles
+7z a dotfiles.zip ./dotfiles
+ls
+z dotfiles
+git branch -M main
+git remote add origin https://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@github.com/supermanten/dotfiles.git
+git push -u origin main
+ls
+z
+cd backup
+nv github.txt
+btop
+sys mem
+sys cpu
+curl wttr.in/Kalyan
+yazi
+cd dotfiles
+stow bash
+yazi
+git status
