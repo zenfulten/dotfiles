@@ -45,5 +45,10 @@ config.window_padding = {
 	bottom = "0px",
 }
 
+--cursour
+default_cursor_style = "SteadyBar"
+default_cursor_blink_rate = 0
+default_cursor_width = "1.5px"
+
 -- and finally, return the configuration to wezterm
 return config

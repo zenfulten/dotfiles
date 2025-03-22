@@ -50,5 +50,4 @@ alias nv = neovide
 alias v = nvim
 
 
-
 $env.config.show_banner = false
