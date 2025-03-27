@@ -7,7 +7,7 @@ return {
 
 				lua = { "stylua" },
 				dart = { "dartls" },
-				go = { "gofmt" },
+				go = { "goimports", "gofumpt" },
 				-- css = { "prettier" },
 				-- html = { "prettier" },
 			},
