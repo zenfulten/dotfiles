@@ -49,21 +49,118 @@ return {
 			},
 		}
 
+		local icons = {
+			misc = {
+				dots = "󰇘",
+			},
+			ft = {
+				octo = "",
+			},
+			dap = {
+				Stopped = { "󰁕 ", "DiagnosticWarn", "DapStoppedLine" },
+				Breakpoint = " ",
+				BreakpointCondition = " ",
+				BreakpointRejected = { " ", "DiagnosticError" },
+				LogPoint = ".>",
+			},
+			diagnostics = {
+				Error = " ",
+				Warn = " ",
+				Hint = " ",
+				Info = " ",
+			},
+			git = {
+				added = " ",
+				modified = " ",
+				removed = " ",
+			},
+			kinds = {
+				Array = " ",
+				Boolean = "󰨙 ",
+				Class = " ",
+				Codeium = "󰘦 ",
+				Color = " ",
+				Control = " ",
+				Collapsed = " ",
+				Constant = "󰏿 ",
+				Constructor = " ",
+				Copilot = " ",
+				Enum = " ",
+				EnumMember = " ",
+				Event = " ",
+				Field = " ",
+				File = " ",
+				Folder = " ",
+				Function = "󰊕 ",
+				Interface = " ",
+				Key = " ",
+				Keyword = " ",
+				Method = "󰊕 ",
+				Module = " ",
+				Namespace = "󰦮 ",
+				Null = " ",
+				Number = "󰎠 ",
+				Object = " ",
+				Operator = " ",
+				Package = " ",
+				Property = " ",
+				Reference = " ",
+				Snippet = "󱄽 ",
+				String = " ",
+				Struct = "󰆼 ",
+				Supermaven = " ",
+				TabNine = "󰏚 ",
+				Text = " ",
+				TypeParameter = " ",
+				Unit = " ",
+				Value = " ",
+				Variable = "󰀫 ",
+			},
+		}
 		-- configure lualine with modified theme
 		lualine.setup({
 			options = {
 				theme = my_lualine_theme,
 			},
 			sections = {
+				lualine_a = { "mode" },
+				lualine_b = { "branch" },
+				lualine_c = {
+					{
+						"diagnostics",
+						symbols = {
+							error = icons.diagnostics.Error,
+							warn = icons.diagnostics.Warn,
+							info = icons.diagnostics.Info,
+							hint = icons.diagnostics.Hint,
+						},
+					},
+					{ "filetype", icon_only = true, separator = "", padding = { left = 1, right = 0 } },
+				},
 				lualine_x = {
 					{
 						lazy_status.updates,
 						cond = lazy_status.has_updates,
 						color = { fg = "#ff9e64" },
+						"diff",
+						symbols = {
+							added = icons.git.added,
+							modified = icons.git.modified,
+							removed = icons.git.removed,
+						},
 					},
-					{ "encoding" },
+					-- { "encoding" },
 					{ "fileformat" },
 					{ "filetype" },
+				},
+				lualine_y = {
+					{ "progress", separator = " ", padding = { left = 1, right = 0 } },
+					{ "location", padding = { left = 0, right = 1 } },
+				},
+				lualine_z = {
+					function()
+						return " " .. os.date("%R")
+					end,
 				},
 			},
 		})

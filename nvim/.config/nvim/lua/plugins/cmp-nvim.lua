@@ -56,8 +56,8 @@ return {
 				sources = cmp.config.sources({
 					{ name = "codeium" },
 					{ name = "nvim_lsp" },
-					{ name = "luasnip" }, -- For luasnip users.
 					{ name = "buffer" },
+					{ name = "luasnip" }, -- For luasnip users.
 				}),
 				formatting = {
 					format = lspkind.cmp_format({
