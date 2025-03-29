@@ -62,7 +62,7 @@ return {
 		},
 		completion = {
 			menu = {
-				border = "single",
+				border = "rounded",
 				draw = {
 					columns = {
 						{ "label", "label_description", gap = 1 },
@@ -70,9 +70,15 @@ return {
 					},
 				},
 			},
-			documentation = { auto_show = true, auto_show_delay_ms = 500, window = { border = "single" } },
+			documentation = { auto_show = true, auto_show_delay_ms = 500, window = { border = "rounded" } },
 		},
-		signature = { enabled = true, window = { border = "single" } },
+		signature = { enabled = true, window = { border = "rounded" } },
+		cmdline = {
+			keymap = {
+				["<Tab>"] = { "show", "accept" },
+			},
+			completion = { menu = { auto_show = true } },
+		},
 	},
 	opts_extend = { "sources.default" },
 }
