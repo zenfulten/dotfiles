@@ -15,8 +15,11 @@ return {
 				},
 				defaults = {
 					prompt_prefix = "   ",
-					selection_caret = " ",
+					selection_caret = "▍ ",
+					multi_icon = " ",
 					entry_prefix = " ",
+					path_display = { "truncate" },
+					file_ignore_patterns = { "node_modules" },
 					sorting_strategy = "ascending",
 					layout_config = {
 						horizontal = {
