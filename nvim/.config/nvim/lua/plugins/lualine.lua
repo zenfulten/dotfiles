@@ -121,6 +121,8 @@ return {
 		lualine.setup({
 			options = {
 				theme = my_lualine_theme,
+				icons_enabled = true,
+				section_separators = { left = "", right = "" },
 			},
 			sections = {
 				lualine_a = { "mode" },
