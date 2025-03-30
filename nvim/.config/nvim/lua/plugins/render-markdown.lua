@@ -2,6 +2,7 @@ return {
 	"MeanderingProgrammer/render-markdown.nvim",
 	opts = {
 		heading = { position = "inline", width = "block" },
+		latex = { enabled = false },
 		checkbox = {
 			checked = { icon = "✔ ", scope_highlight = "@markup.strikethrough" },
 			unchecked = { icon = "✘ " },
