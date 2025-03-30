@@ -1,5 +1,6 @@
 {
     "diagnostics.globals": [
-        "default_cursor_style"
+        "default_cursor_style",
+        "warn_about_missing_glyphs"
     ]
 }
