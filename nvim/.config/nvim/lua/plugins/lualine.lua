@@ -6,47 +6,38 @@ return {
 		local lazy_status = require("lazy.status") -- to configure lazy pending updates count
 
 		local colors = {
-			blue = "#65D1FF",
-			green = "#3EFFDC",
-			violet = "#FF61EF",
-			yellow = "#FFDA7B",
-			red = "#FF4A4A",
-			fg = "#c3ccdc",
-			bg = "#112638",
-			inactive_bg = "#2c3043",
-		}
-
-		local my_lualine_theme = {
-			normal = {
-				a = { bg = colors.blue, fg = colors.bg, gui = "bold" },
-				b = { bg = colors.bg, fg = colors.fg },
-				c = { bg = colors.bg, fg = colors.fg },
-			},
-			insert = {
-				a = { bg = colors.green, fg = colors.bg, gui = "bold" },
-				b = { bg = colors.bg, fg = colors.fg },
-				c = { bg = colors.bg, fg = colors.fg },
-			},
-			visual = {
-				a = { bg = colors.violet, fg = colors.bg, gui = "bold" },
-				b = { bg = colors.bg, fg = colors.fg },
-				c = { bg = colors.bg, fg = colors.fg },
-			},
-			command = {
-				a = { bg = colors.yellow, fg = colors.bg, gui = "bold" },
-				b = { bg = colors.bg, fg = colors.fg },
-				c = { bg = colors.bg, fg = colors.fg },
-			},
-			replace = {
-				a = { bg = colors.red, fg = colors.bg, gui = "bold" },
-				b = { bg = colors.bg, fg = colors.fg },
-				c = { bg = colors.bg, fg = colors.fg },
-			},
-			inactive = {
-				a = { bg = colors.inactive_bg, fg = colors.semilightgray, gui = "bold" },
-				b = { bg = colors.inactive_bg, fg = colors.semilightgray },
-				c = { bg = colors.inactive_bg, fg = colors.semilightgray },
-			},
+			bg = "#161617",
+			fg = "#c9c7cd",
+			subtext1 = "#b4b1ba",
+			subtext2 = "#9f9ca6",
+			subtext3 = "#8b8693",
+			subtext4 = "#6c6874",
+			bg_dark = "#131314",
+			black = "#27272a",
+			red = "#ea83a5",
+			green = "#90b99f",
+			yellow = "#e6b99d",
+			purple = "#aca1cf",
+			magenta = "#e29eca",
+			orange = "#f5a191",
+			blue = "#92a2d5",
+			cyan = "#85b5ba",
+			bright_black = "#353539",
+			bright_red = "#f591b2",
+			bright_green = "#9dc6ac",
+			bright_yellow = "#f0c5a9",
+			bright_purple = "#b9aeda",
+			bright_magenta = "#ecaad6",
+			bright_orange = "#ffae9f",
+			bright_blue = "#a6b6e9",
+			bright_cyan = "#99c9ce",
+			gray0 = "#18181a",
+			gray1 = "#1b1b1c",
+			gray2 = "#2a2a2c",
+			gray3 = "#313134",
+			gray4 = "#3b3b3e",
+			-- Special
+			none = "NONE",
 		}
 
 		local icons = {
@@ -117,16 +108,66 @@ return {
 				Variable = "󰀫 ",
 			},
 		}
+		local modecolor = {
+			n = colors.red,
+			i = colors.cyan,
+			v = colors.purple,
+			[""] = colors.purple,
+			V = colors.red,
+			c = colors.yellow,
+			no = colors.red,
+			s = colors.yellow,
+			S = colors.yellow,
+			[""] = colors.yellow,
+			ic = colors.yellow,
+			R = colors.green,
+			Rv = colors.purple,
+			cv = colors.red,
+			ce = colors.red,
+			r = colors.cyan,
+			rm = colors.cyan,
+			["r?"] = colors.cyan,
+			["!"] = colors.red,
+			t = colors.bright_red,
+		}
+		local modes = {
+			"mode",
+			color = function()
+				local mode_color = modecolor
+				return { bg = mode_color[vim.fn.mode()], fg = colors.bg_dark, gui = "bold" }
+			end,
+			separator = { left = "", right = "" },
+		}
+		local branch = {
+			"branch",
+			icon = "",
+			color = { bg = colors.green, fg = colors.bg, gui = "bold" },
+			separator = { left = "", right = "" },
+		}
+
+		local space = {
+			function()
+				return " "
+			end,
+			color = { bg = colors.bg_dark, fg = colors.blue },
+		}
 		-- configure lualine with modified theme
 		lualine.setup({
 			options = {
-				theme = my_lualine_theme,
+				theme = "auto",
 				icons_enabled = true,
-				section_separators = { left = "", right = "" },
+				section_separators = { left = "", right = "" },
+				disabled_filetypes = {
+					statusline = {},
+					winbar = {},
+				},
+				ignore_focus = {},
+				always_divide_middle = true,
+				globalstatus = true,
 			},
 			sections = {
-				lualine_a = { "mode" },
-				lualine_b = { "branch" },
+				lualine_a = { modes },
+				lualine_b = { space, branch },
 				lualine_c = {
 					{
 						"diagnostics",
