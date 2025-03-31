@@ -5,7 +5,14 @@ return {
 		routes = {
 			{
 				view = "notify",
-				filter = { event = "msg_showmode" },
+				filter = {
+					event = "msg_showmode",
+					any = {
+						{ find = "%d+L, %d+B" },
+						{ find = "; after #%d+" },
+						{ find = "; before #%d+" },
+					},
+				},
 			},
 		},
 		lsp = {
