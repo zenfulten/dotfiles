@@ -37,6 +37,9 @@ local builtin = require("telescope.builtin")
 map("n", "<leader>fp", builtin.find_files, { desc = "Find Files" })
 map("n", "<leader>fg", builtin.live_grep, { desc = "Live Grep" })
 map("n", "<leader><leader>", builtin.oldfiles, { desc = "Find Old Files" })
+map("n", "<leader>fz", builtin.current_buffer_fuzzy_find, { desc = "Telescope find in current buffer" })
+map("n", "<leader>fb", builtin.buffers, { desc = "Telescope find buffers" })
+map("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
 
 -- toggle-term
 map("n", "<leader>rt", ":ToggleTerm direction=float size=30<CR>")
@@ -76,10 +79,15 @@ map("n", "<leader>fU", "<cmd> FlutterPubUpgrade <CR>", { desc = "Flutter pub upg
 map("n", "<leader>fu", "<cmd> FlutterPubGet <CR>", { desc = "Flutter pub get" })
 
 -- windows
-map("n", "<leader>w", "<c-w>", { desc = "Windows", remap = true })
 map("n", "<leader>-", "<C-W>s", { desc = "Split Window Below", remap = true })
 map("n", "<leader>|", "<C-W>v", { desc = "Split Window Right", remap = true })
 map("n", "<leader>rw", "<C-W>c", { desc = "Delete Window", remap = true })
+
+-- whichkey
+map("n", "<leader>wK", "<cmd>WhichKey <CR>", { desc = "whichkey all keymaps" })
+map("n", "<leader>wk", function()
+	vim.cmd("WhichKey " .. vim.fn.input("WhichKey: "))
+end, { desc = "whichkey query lookup" })
 
 local api = vim.api
 
