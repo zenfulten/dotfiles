@@ -1,5 +1,4 @@
 fork = false
-# frame = "full"
 frame = "none"
 idle = true
 maximized = false
@@ -9,9 +8,10 @@ srgb = false
 tabs = true
 theme = "auto"
 title-hidden = true
-vsync = false
+vsync = true
 wsl = false
 
+
 [font]
-normal = [] # Will use the bundled Fira Code Nerd Font by default
-size = 14.0
+normal = ["JetBrains Mono"]
+size = 15
