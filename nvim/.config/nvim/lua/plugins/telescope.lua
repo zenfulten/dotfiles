@@ -7,13 +7,19 @@ return {
 		tag = "0.1.5",
 		dependencies = { "nvim-lua/plenary.nvim" },
 		config = function()
+			local actions = require("telescope.actions")
 			require("telescope").setup({
+				sort_mru = true,
+				sort_lastused = true,
+				ignore_current_buffer = true,
+				pickers = { buffers = { sort_lastused = true } },
 				extensions = {
 					["ui-select"] = {
 						require("telescope.themes").get_dropdown({}),
 					},
 				},
 				defaults = {
+					initial_mode = "insert",
 					prompt_prefix = "   ",
 					selection_caret = "▍ ",
 					multi_icon = " ",
@@ -30,6 +36,10 @@ return {
 						height = 0.80,
 					},
 					mappings = {
+						i = {
+							["<C-j>"] = actions.move_selection_next,
+							["<C-k>"] = actions.move_selection_previous,
+						},
 						n = { ["q"] = require("telescope.actions").close },
 					},
 				},
