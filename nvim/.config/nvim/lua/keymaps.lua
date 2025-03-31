@@ -42,7 +42,7 @@ map("n", "<leader>fb", builtin.buffers, { desc = "Telescope find buffers" })
 map("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
 
 -- toggle-term
-map("n", "<leader>rt", ":ToggleTerm direction=float size=30<CR>")
+map("n", "<leader>rt", ":ToggleTerm<CR>", { desc = "ToggleTerm" })
 
 -- Navigate vim panes better
 map("n", "<c-k>", ":wincmd k<CR>")
