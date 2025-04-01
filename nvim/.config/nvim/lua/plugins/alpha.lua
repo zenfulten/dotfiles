@@ -43,6 +43,7 @@ return {
 			dashboard.button("SPC e", "  > Toggle file explorer", "<cmd>Neotree filesystem reveal left<CR>"),
 			dashboard.button("SPC fp", "󰱼  > Find File", "<cmd>Telescope find_files<CR>"),
 			dashboard.button("SPC fg", "  > Find Word", "<cmd>Telescope live_grep<CR>"),
+			dashboard.button("l", "󰒲  >" .. " Lazy", "<cmd> Lazy <cr>"),
 			dashboard.button("q", "  > Quit NVIM", "<cmd>qa<CR>"),
 		}
 
