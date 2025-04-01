@@ -4,9 +4,9 @@ return {
 	opts = {
 		routes = {
 			{
-				view = "notify",
+				view = "mini",
 				filter = {
-					event = "msg_showmode",
+					event = "msg_show",
 					any = {
 						{ find = "%d+L, %d+B" },
 						{ find = "; after #%d+" },
