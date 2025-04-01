@@ -61,6 +61,9 @@ alias nv = neovide
 
 alias v = nvim
 
+# fastfetch
+alias fs = fastfetch --logo /home/rio/Images/fastfetch/space.png
+
 # Git
 alias gc = git commit -m
 alias gp = git push
