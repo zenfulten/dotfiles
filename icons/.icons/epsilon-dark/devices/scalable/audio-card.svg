@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Gravit.io -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   style="isolation:isolate"
+   viewBox="0 0 48 48"
+   width="48"
+   height="48"
+   version="1.1"
+   id="svg23"
+   sodipodi:docname="audio-card.svg"
+   inkscape:version="0.92.4 (unknown)">
+  <metadata
+     id="metadata27">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview25"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:zoom="6.9130222"
+     inkscape:cx="-19.508694"
+     inkscape:cy="9.6728785"
+     inkscape:current-layer="svg23" />
+  <defs
+     id="defs5">
+    <clipPath
+       id="_clipPath_Sd08GpmkdqIAy1UR239YV2vyPFIZuRyU">
+      <rect
+         width="48"
+         height="48"
+         id="rect2" />
+    </clipPath>
+  </defs>
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:#bdcdd4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.54634148"
+     d="m 7.909879,1.9553796 a 1.9999999,1.9999999 0 0 0 -2,2 v 4 H 5.892301 v 4.0000004 4 3.999999 4 4 4 4 4 4 a 1.9999999,1.9999999 0 0 0 2,2 1.9999999,1.9999999 0 0 0 2,-2 v -4 -4 -4 -4 -4 -4 -3.999999 -4 -4.0000004 h 0.017578 v -4 a 1.9999999,1.9999999 0 0 0 -2,-2 z"
+     id="rect891-6-5" />
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:#bdcdd4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.54634154"
+     d="m 9.8923008,11.95538 v 4 h 4.0000002 4 4 4 4 4 4 v 2 1.999999 4 4 a 1.9999999,1.9999999 0 0 0 2,2 1.9999999,1.9999999 0 0 0 2,-2 v -4 -4 -3.999999 -2 a 1.9999999,1.9999999 0 0 0 -2,-2 h -2 -4 -4 -4 -4 -4 -4 z"
+     id="rect891-6-2" />
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:#bdcdd4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.54634148"
+     d="m 9.8923008,32.133113 v 2 2 2 h 3.8925782 a 1.9999999,1.9999999 0 0 0 0,0.01953 1.9999999,1.9999999 0 0 0 2,2 1.9999999,1.9999999 0 0 0 2,-2 1.9999999,1.9999999 0 0 0 0,-0.01953 h 0.107422 a 1.9999999,1.9999999 0 0 0 0,0.01953 1.9999999,1.9999999 0 0 0 2,2 1.9999999,1.9999999 0 0 0 2,-2 1.9999999,1.9999999 0 0 0 2,2 1.9999999,1.9999999 0 0 0 2,-2 1.9999999,1.9999999 0 0 0 2,2 1.9999999,1.9999999 0 0 0 2,-2 1.9999999,1.9999999 0 0 0 2,2 1.9999999,1.9999999 0 0 0 2,-2 1.9999999,1.9999999 0 0 0 0,-0.01953 h 4 a 1.9999999,1.9999999 0 0 0 2,-2 v -2 a 1.9999999,1.9999999 0 0 0 -2,-2 h -4 -4 -4 -4 -4 -4 z"
+     id="rect1779" />
+  <path
+     style="fill:#bdcdd4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.54634148"
+     d="m 25.515607,18.044635 a 1.9999999,1.9999999 0 0 0 -1.414063,0.585903 l -2.65625,2.656251 h -1.929687 -2 v 2.000013 2.000014 1.999973 h 2 2 0.414063 l 0.757812,0.757834 1.392578,1.392567 a 1.9999999,1.9999999 0 0 0 1.435547,0.607445 1.9999999,1.9999999 0 0 0 2,-2.000012 V 24.044635 20.04461 a 1.9999999,1.9999999 0 0 0 -2,-1.999975 z m 2.96875,3.999988 v 3.999987 a 1.9999999,1.9999999 0 0 0 2,-1.999975 1.9999999,1.9999999 0 0 0 -2,-2.000012 z"
+     id="rect1716-9-7"
+     inkscape:connector-curvature="0" />
+</svg>

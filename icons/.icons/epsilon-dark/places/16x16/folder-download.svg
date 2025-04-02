@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="folder-download.svg"
+   inkscape:version="0.92.4 (unknown)">
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="29.5"
+     inkscape:cx="2.7803874"
+     inkscape:cy="6.9767212"
+     inkscape:current-layer="svg5" />
+  <defs
+     id="defs3051">
+    <style
+       type="text/css"
+       id="current-color-scheme">
+      .ColorScheme-Text {
+        color:#4d4d4d;
+      }
+      </style>
+  </defs>
+  <path
+     sodipodi:nodetypes="ccccccccccccccccscscccccccsccc"
+     inkscape:connector-curvature="0"
+     id="path2045"
+     d="M 5.0512568,11.604449 3.0587148,9.6837788 c -0.833183,-0.833183 -0.16502,-0.95177 0.960847,-0.957155 l 1.944171,-0.0093 v -3.595149 -3.595148 h 1.815706 1.815707 v 0.485387 0.485386 h -1.33032 -1.33032 v 3.594987 3.594986 l -1.230451,0.0095 -1.230451,0.0095 1.760781,1.6995822 c 0.96843,0.93477 1.779815,1.69521 1.803077,1.689866 0.02326,-0.0053 0.830653,-0.770157 1.794201,-1.699583 l 1.7519052,-1.6898652 -0.976234,-0.0096 -0.9762342,-0.0096 v -0.484817 -0.484809 h 2.1838132 c 1.325913,0 1.998972,0.180502 1.065909,1.079155 -0.487493,0.4693042 -1.120466,1.0784072 -1.793561,1.7258772 -1.4040272,1.350574 -2.6669322,2.56683 -2.8064572,2.702792 l -0.253682,0.247202 z"
+     style="opacity:1;isolation:isolate;vector-effect:none;fill:#005c94;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.01964348;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+</svg>
