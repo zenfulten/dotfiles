@@ -9,7 +9,6 @@ return {
 				insert_mappings = true,
 				close_on_exit = true,
 				direction = "float",
-				size = 30,
 				float_opts = {
 					border = "curved",
 				},
