@@ -1,9 +1,3 @@
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
-vim.cmd("colorscheme tokyonight-night")
-
 local opt = vim.opt
 local o = vim.o
 local g = vim.g
@@ -96,16 +90,3 @@ g.mapleader = " "
 g.background = "light"
 
 vim.wo.number = true
-
--- Rememeber last editing position.
-local api = vim.api
-api.nvim_create_autocmd({ "BufRead", "BufReadPost" }, {
-	callback = function()
-		local row, column = table.unpack(api.nvim_buf_get_mark(0, '"'))
-		local buf_line_count = api.nvim_buf_line_count(0)
-
-		if row >= 1 and row <= buf_line_count then
-			api.nvim_win_set_cursor(0, { row, column })
-		end
-	end,
-})
