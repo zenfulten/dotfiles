@@ -38,6 +38,8 @@ def --env y [...args] {
 
 #alias name = value
 
+# exit
+alias e = exit
 #ls 
 alias l = lsd
 alias ll = lsd -l
