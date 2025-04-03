@@ -137,6 +137,7 @@ return {
 				return { bg = mode_color[vim.fn.mode()], fg = colors.bg_dark, gui = "bold" }
 			end,
 			separator = { left = "", right = "" },
+			icon = "",
 		}
 		local branch = {
 			"branch",
@@ -198,7 +199,7 @@ return {
 				},
 				lualine_y = {
 					{ "progress", separator = " ", padding = { left = 1, right = 0 } },
-					{ "location", padding = { left = 0, right = 1 } },
+					{ "location", separator = { left = "", right = "" }, icon = "" },
 				},
 				lualine_z = {
 					function()
