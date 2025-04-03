@@ -49,6 +49,14 @@ map("n", "<leader>fz", builtin.current_buffer_fuzzy_find, { desc = "Telescope fi
 map("n", "<leader>fb", builtin.buffers, { desc = "Telescope find buffers" })
 map("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
 
+-- BufferLine
+map("n", "<leader>bp", "<Cmd>BufferLineTogglePin<CR>", { desc = "Toggle Pin" })
+map("n", "<leader>bP", "<Cmd>BufferLineGroupClose ungrouped<CR>", { desc = "Delete Non-Pinned Buffers" })
+map("n", "<leader>br", "<Cmd>BufferLineCloseRight<CR>", { desc = "Delete Buffers to the Right" })
+map("n", "<leader>bl", "<Cmd>BufferLineCloseLeft<CR>", { desc = "Delete Buffers to the Left" })
+map("n", "<S-h>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev Buffer" })
+map("n", "<S-l>", "<cmd>BufferLineCycleNext<cr>", { desc = "Next Buffer" })
+
 -- toggle-term
 map("n", "<leader>rt", ":ToggleTerm<CR>", { desc = "ToggleTerm" })
 
