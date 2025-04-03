@@ -76,6 +76,10 @@ map("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit All" })
 --make jk key to ESC
 map("i", "jk", "<esc>", { desc = "Normal Mode" })
 
+-- better indenting
+map("v", "<", "<gv")
+map("v", ">", ">gv")
+
 --flutter tools
 map("n", "<leader>fd", "<cmd> FlutterDevices <CR>", { desc = "Flutter devices" })
 map("n", "<leader>fD", "<cmd> FlutterDetatch <CR>", { desc = "Flutter detatch" })
