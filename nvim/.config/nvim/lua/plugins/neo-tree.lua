@@ -66,7 +66,7 @@ return {
 			},
 		},
 		window = {
-			width = 25, -- Default 40
+			width = 30, -- Default 40
 			mappings = {
 				["q"] = "close_window",
 				["?"] = "noop",

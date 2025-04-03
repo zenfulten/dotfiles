@@ -58,7 +58,7 @@ map("n", "<S-h>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev Buffer" })
 map("n", "<S-l>", "<cmd>BufferLineCycleNext<cr>", { desc = "Next Buffer" })
 
 -- toggle-term
-map("n", "<leader>rt", ":ToggleTerm<CR>", { desc = "ToggleTerm" })
+map("n", "<C-/>", ":ToggleTerm<CR>", { desc = "ToggleTerm" })
 
 -- Navigate vim panes better
 map("n", "<c-k>", ":wincmd k<CR>")
