@@ -2,6 +2,7 @@ return {
 	{
 		"stevearc/conform.nvim",
 		event = "BufWritePre", -- uncomment for format on save
+		lazy = true,
 		opts = {
 			formatters_by_ft = {
 

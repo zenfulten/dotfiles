@@ -4,7 +4,7 @@ return {
 	},
 	{
 		"nvim-telescope/telescope.nvim",
-		tag = "0.1.5",
+		version = false,
 		dependencies = { "nvim-lua/plenary.nvim" },
 		config = function()
 			local actions = require("telescope.actions")
