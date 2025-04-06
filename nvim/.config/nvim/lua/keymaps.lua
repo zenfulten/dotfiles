@@ -35,7 +35,7 @@ map("n", "<leader>rn", "<cmd>set rnu!<CR>", { desc = "toggle relative number" })
 map("n", "<leader>K", vim.lsp.buf.hover, { desc = "Lsp hover" })
 map("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Lsp definition" })
 map("n", "<leader>gr", vim.lsp.buf.references, { desc = "Lsp references" })
-map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
+map("n", "<C-.>", vim.lsp.buf.code_action, { desc = "Code Action" })
 
 -- Neo Tree
 map("n", "<leader>e", ":Neotree filesystem reveal left<CR>", { desc = "File Explorer" })
@@ -114,5 +114,5 @@ end, { desc = "whichkey query lookup" })
 
 local api = vim.api
 
-api.nvim_set_keymap("n", "<C-c>", "gtc", { desc = "Toggle Comment", noremap = false })
-api.nvim_set_keymap("v", "<C-c>", "goc", { desc = "Toggle Comment", noremap = false })
+api.nvim_set_keymap("n", "<C-/>", "gtc", { desc = "Toggle Comment", noremap = false })
+api.nvim_set_keymap("v", "<C-/>", "goc", { desc = "Toggle Comment", noremap = false })
