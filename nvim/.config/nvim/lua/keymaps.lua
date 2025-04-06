@@ -8,6 +8,9 @@ map("i", "<C-l>", "<Right>", { desc = "move right" })
 map("i", "<C-j>", "<Down>", { desc = "move down" })
 map("i", "<C-k>", "<Up>", { desc = "move up" })
 
+--Disable space in normal mode
+map("n", "<Space>", "<Nop>", { desc = "Disable space" })
+
 -- Move Lines
 map("n", "<A-j>", "<cmd>execute 'move .+' . v:count1<cr>==", { desc = "Move Down" })
 map("n", "<A-k>", "<cmd>execute 'move .-' . (v:count1 + 1)<cr>==", { desc = "Move Up" })
@@ -58,7 +61,7 @@ map("n", "<S-h>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev Buffer" })
 map("n", "<S-l>", "<cmd>BufferLineCycleNext<cr>", { desc = "Next Buffer" })
 
 -- toggle-term
-map("n", "<C-/>", ":ToggleTerm<CR>", { desc = "ToggleTerm" })
+map("n", "<leader>t", "<cmd>ToggleTerm<cr>", { desc = "ToggleTerm" })
 
 -- Navigate vim panes better
 map("n", "<c-k>", ":wincmd k<CR>")
