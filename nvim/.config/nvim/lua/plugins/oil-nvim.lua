@@ -1,8 +1,19 @@
 return {
 	"stevearc/oil.nvim",
-	config = function()
-		local oil = require("oil")
-		oil.setup()
-		vim.keymap.set("n", "-", oil.toggle_float, { desc = "Oil" })
-	end,
+	opts = {
+		columns = {
+			"permissions",
+			"size",
+			"mtime",
+			"icon",
+		},
+		delete_to_trash = true,
+	},
+	keys = {
+		{
+			"-",
+			"<cmd>Oil<CR>",
+			desc = "Open Oil File Manager",
+		},
+	},
 }
