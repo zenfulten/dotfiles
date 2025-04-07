@@ -5,12 +5,12 @@ local config = wezterm.config_builder()
 
 config.color_scheme = "Tokyo Night"
 
--- config.font = wezterm.font_with_fallback({
--- 	"JetBrains Mono",
--- 	{ family = "Hack Nerd Font Mono", weight = "Bold", scale = 0.7, stretch = "Normal", style = "Normal" },
--- })
+config.font = wezterm.font_with_fallback({
+	"JetBrains Mono",
+	{ family = "Hack Nerd Font Mono", weight = "Bold", scale = 0.7, style = "Normal" },
+})
 
-config.font = wezterm.font("JetBrains Mono", { weight = "Bold", scale = 0.7, stretch = "Normal", style = "Normal" })
+--[[ config.font = wezterm.font("JetBrains Mono", { weight = "Bold", scale = 0.7, stretch = "Normal", style = "Normal" }) ]]
 
 config.font_size = 13
 
