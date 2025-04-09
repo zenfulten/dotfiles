@@ -26,7 +26,7 @@ if g.neovide then
 	g.neovide_refresh_rate = 60
 
 	--border-radius
-	g.neovide_floating_corner_radius = 0.8
+	g.neovide_floating_corner_radius = 0
 
 	--curently mac only
 	g.neovide_show_border = false
