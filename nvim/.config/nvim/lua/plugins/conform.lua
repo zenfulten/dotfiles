@@ -10,6 +10,7 @@ return {
 				dart = { "dartls" },
 				go = { "goimports", "gofumpt" },
 				python = { "ruff" },
+				rust = { "rust_analyzer" },
 				-- css = { "prettier" },
 				-- html = { "prettier" },
 			},
