@@ -7,12 +7,12 @@ config.color_scheme = "Tokyo Night"
 
 config.font = wezterm.font_with_fallback({
 	-- "JetBrains Mono",
-	{ family = "JetBrainsMono Nerd Font", weight = "Bold", scale = 0.7, style = "Normal" },
+	{ family = "JetBrainsMono Nerd Font" },
 })
 
 --[[ config.font = wezterm.font("JetBrains Mono", { weight = "Bold", scale = 0.7, stretch = "Normal", style = "Normal" }) ]]
 
-config.font_size = 17
+config.font_size = 13
 
 config.enable_tab_bar = false
 
