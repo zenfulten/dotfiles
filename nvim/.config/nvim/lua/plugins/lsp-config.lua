@@ -26,7 +26,7 @@ return {
 
 			local lspconfig = require("lspconfig")
 
-			local servers = { "lua_ls", "dartls", "gopls", "rust_analyzer", "pyright" }
+			local servers = { "lua_ls", "dartls", "gopls", "pyright" }
 			for _, lsp in ipairs(servers) do
 				lspconfig[lsp].setup({
 					capabilities = capabilities,
