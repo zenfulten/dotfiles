@@ -438,3 +438,113 @@
 2025/04/12 (10:38:36) | WARNING: NVML: Failed to get VRAM clock speed: Not Supported
 2025/04/12 (10:38:36) | WARNING: NVML: Failed to get PCIe RX throughput: Not Supported
 2025/04/12 (10:38:36) | WARNING: NVML: Failed to get GPU power usage: Not Supported
+
+2025/04/12 (10:41:37) | ===> btop++ v.1.4.0
+2025/04/12 (10:41:37) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/12 (10:41:37) | WARNING: NVML: Failed to get maximum GPU temperature, defaulting to 110°C: Not Supported
+2025/04/12 (10:41:37) | WARNING: NVML: Failed to get GPU utilization: Not Supported
+2025/04/12 (10:41:37) | WARNING: NVML: Failed to get GPU clock speed: Not Supported
+2025/04/12 (10:41:37) | WARNING: NVML: Failed to get VRAM clock speed: Not Supported
+2025/04/12 (10:41:37) | WARNING: NVML: Failed to get PCIe TX throughput: Not Supported
+2025/04/12 (10:41:37) | WARNING: NVML: Failed to get PCIe RX throughput: Not Supported
+2025/04/12 (10:41:37) | WARNING: NVML: Failed to get GPU power usage: Not Supported
+
+2025/04/12 (17:10:36) | ===> btop++ v.1.4.0
+2025/04/12 (17:10:36) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/12 (17:10:36) | WARNING: NVML: Failed to get maximum GPU temperature, defaulting to 110°C: Not Supported
+2025/04/12 (17:10:36) | WARNING: NVML: Failed to get GPU utilization: Not Supported
+2025/04/12 (17:10:36) | WARNING: NVML: Failed to get GPU clock speed: Not Supported
+2025/04/12 (17:10:36) | WARNING: NVML: Failed to get PCIe TX throughput: Not Supported
+2025/04/12 (17:10:36) | WARNING: NVML: Failed to get PCIe RX throughput: Not Supported
+2025/04/12 (17:10:36) | WARNING: NVML: Failed to get VRAM clock speed: Not Supported
+2025/04/12 (17:10:36) | WARNING: NVML: Failed to get GPU power usage: Not Supported
+
+2025/04/20 (17:49:53) | ===> btop++ v.1.4.0
+2025/04/20 (17:49:53) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/20 (17:49:53) | WARNING: NVML: Failed to get maximum GPU temperature, defaulting to 110°C: Not Supported
+2025/04/20 (17:49:53) | WARNING: NVML: Failed to get GPU utilization: Not Supported
+2025/04/20 (17:49:53) | WARNING: NVML: Failed to get GPU clock speed: Not Supported
+2025/04/20 (17:49:53) | WARNING: NVML: Failed to get VRAM clock speed: Not Supported
+2025/04/20 (17:49:53) | WARNING: NVML: Failed to get PCIe TX throughput: Not Supported
+2025/04/20 (17:49:53) | WARNING: NVML: Failed to get PCIe RX throughput: Not Supported
+2025/04/20 (17:49:53) | WARNING: NVML: Failed to get GPU power usage: Not Supported
+
+2025/04/20 (17:50:27) | ===> btop++ v.1.4.0
+2025/04/20 (17:50:27) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/20 (17:50:27) | WARNING: NVML: Failed to get maximum GPU temperature, defaulting to 110°C: Not Supported
+2025/04/20 (17:50:27) | WARNING: NVML: Failed to get GPU utilization: Not Supported
+2025/04/20 (17:50:27) | WARNING: NVML: Failed to get GPU clock speed: Not Supported
+2025/04/20 (17:50:27) | WARNING: NVML: Failed to get PCIe TX throughput: Not Supported
+2025/04/20 (17:50:27) | WARNING: NVML: Failed to get PCIe RX throughput: Not Supported
+2025/04/20 (17:50:27) | WARNING: NVML: Failed to get VRAM clock speed: Not Supported
+2025/04/20 (17:50:27) | WARNING: NVML: Failed to get GPU power usage: Not Supported
+
+2025/04/23 (09:26:48) | ===> btop++ v.1.4.0
+2025/04/23 (09:26:48) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/23 (09:26:48) | WARNING: NVML: Failed to get maximum GPU temperature, defaulting to 110°C: Not Supported
+2025/04/23 (09:26:48) | WARNING: NVML: Failed to get GPU utilization: Not Supported
+2025/04/23 (09:26:48) | WARNING: NVML: Failed to get PCIe TX throughput: Not Supported
+2025/04/23 (09:26:48) | WARNING: NVML: Failed to get GPU clock speed: Not Supported
+2025/04/23 (09:26:48) | WARNING: NVML: Failed to get PCIe RX throughput: Not Supported
+2025/04/23 (09:26:48) | WARNING: NVML: Failed to get VRAM clock speed: Not Supported
+2025/04/23 (09:26:48) | WARNING: NVML: Failed to get GPU power usage: Not Supported
+
+2025/04/23 (09:57:32) | ===> btop++ v.1.4.0
+2025/04/23 (09:57:32) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/23 (09:57:32) | WARNING: NVML: Failed to get maximum GPU temperature, defaulting to 110°C: Not Supported
+2025/04/23 (09:57:32) | WARNING: NVML: Failed to get GPU utilization: Not Supported
+2025/04/23 (09:57:32) | WARNING: NVML: Failed to get GPU clock speed: Not Supported
+2025/04/23 (09:57:32) | WARNING: NVML: Failed to get PCIe TX throughput: Not Supported
+2025/04/23 (09:57:32) | WARNING: NVML: Failed to get VRAM clock speed: Not Supported
+2025/04/23 (09:57:32) | WARNING: NVML: Failed to get PCIe RX throughput: Not Supported
+2025/04/23 (09:57:32) | WARNING: NVML: Failed to get GPU power usage: Not Supported
+
+2025/04/23 (09:59:49) | ===> btop++ v.1.4.0
+2025/04/23 (09:59:49) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/23 (09:59:49) | WARNING: NVML: Failed to get maximum GPU temperature, defaulting to 110°C: Not Supported
+2025/04/23 (09:59:49) | WARNING: NVML: Failed to get GPU utilization: Not Supported
+2025/04/23 (09:59:49) | WARNING: NVML: Failed to get GPU clock speed: Not Supported
+2025/04/23 (09:59:49) | WARNING: NVML: Failed to get PCIe TX throughput: Not Supported
+2025/04/23 (09:59:49) | WARNING: NVML: Failed to get VRAM clock speed: Not Supported
+2025/04/23 (09:59:49) | WARNING: NVML: Failed to get GPU power usage: Not Supported
+2025/04/23 (09:59:49) | WARNING: NVML: Failed to get PCIe RX throughput: Not Supported
+
+2025/04/24 (08:43:06) | ===> btop++ v.1.4.0
+2025/04/24 (08:43:06) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/24 (08:43:06) | WARNING: NVML: Failed to get maximum GPU temperature, defaulting to 110°C: Not Supported
+2025/04/24 (08:43:06) | WARNING: NVML: Failed to get GPU utilization: Not Supported
+2025/04/24 (08:43:06) | WARNING: NVML: Failed to get GPU clock speed: Not Supported
+2025/04/24 (08:43:06) | WARNING: NVML: Failed to get PCIe TX throughput: Not Supported
+2025/04/24 (08:43:06) | WARNING: NVML: Failed to get PCIe RX throughput: Not Supported
+2025/04/24 (08:43:06) | WARNING: NVML: Failed to get VRAM clock speed: Not Supported
+2025/04/24 (08:43:06) | WARNING: NVML: Failed to get GPU power usage: Not Supported
+
+2025/04/27 (10:52:17) | ===> btop++ v.1.4.0
+2025/04/27 (10:52:17) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/27 (10:52:17) | WARNING: NVML: Failed to get maximum GPU temperature, defaulting to 110°C: Not Supported
+2025/04/27 (10:52:17) | WARNING: NVML: Failed to get GPU utilization: Not Supported
+2025/04/27 (10:52:17) | WARNING: NVML: Failed to get GPU clock speed: Not Supported
+2025/04/27 (10:52:17) | WARNING: NVML: Failed to get PCIe RX throughput: Not Supported
+2025/04/27 (10:52:17) | WARNING: NVML: Failed to get PCIe TX throughput: Not Supported
+2025/04/27 (10:52:17) | WARNING: NVML: Failed to get VRAM clock speed: Not Supported
+2025/04/27 (10:52:17) | WARNING: NVML: Failed to get GPU power usage: Not Supported
+
+2025/04/27 (11:45:00) | ===> btop++ v.1.4.0
+2025/04/27 (11:45:00) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/27 (11:45:00) | WARNING: NVML: Failed to get maximum GPU temperature, defaulting to 110°C: Not Supported
+2025/04/27 (11:45:00) | WARNING: NVML: Failed to get GPU utilization: Not Supported
+2025/04/27 (11:45:00) | WARNING: NVML: Failed to get PCIe TX throughput: Not Supported
+2025/04/27 (11:45:00) | WARNING: NVML: Failed to get GPU clock speed: Not Supported
+2025/04/27 (11:45:00) | WARNING: NVML: Failed to get PCIe RX throughput: Not Supported
+2025/04/27 (11:45:00) | WARNING: NVML: Failed to get VRAM clock speed: Not Supported
+2025/04/27 (11:45:00) | WARNING: NVML: Failed to get GPU power usage: Not Supported
+
+2025/04/27 (11:53:54) | ===> btop++ v.1.4.0
+2025/04/27 (11:53:54) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/27 (11:53:54) | WARNING: NVML: Failed to get maximum GPU temperature, defaulting to 110°C: Not Supported
+2025/04/27 (11:53:54) | WARNING: NVML: Failed to get GPU utilization: Not Supported
+2025/04/27 (11:53:54) | WARNING: NVML: Failed to get GPU clock speed: Not Supported
+2025/04/27 (11:53:54) | WARNING: NVML: Failed to get VRAM clock speed: Not Supported
+2025/04/27 (11:53:54) | WARNING: NVML: Failed to get PCIe RX throughput: Not Supported
+2025/04/27 (11:53:54) | WARNING: NVML: Failed to get PCIe TX throughput: Not Supported
+2025/04/27 (11:53:54) | WARNING: NVML: Failed to get GPU power usage: Not Supported
