@@ -9,7 +9,6 @@ return {
 				lua = { "stylua" },
 				dart = { "dartls" },
 				go = { "goimports", "gofumpt" },
-				python = { "black" },
 				-- css = { "prettier" },
 				-- html = { "prettier" },
 			},
