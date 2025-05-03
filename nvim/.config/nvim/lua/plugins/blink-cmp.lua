@@ -50,7 +50,7 @@ return {
 			},
 		},
 		sources = {
-			default = { "codeium", "lsp", "path", "snippets", "buffer" },
+			default = { "lsp", "codeium", "path", "snippets", "buffer" },
 			providers = {
 				codeium = {
 					name = "codeium",
