@@ -16,4 +16,9 @@
 #
 # You can remove these comments if you want or leave
 # them for future reference.
+use std "path add"
+
 zoxide init nushell | save -f ~/.zoxide.nu
+
+# Add ~/.local/bin to the beginning of the PATH
+path add ($env.HOME | path join ".local" "bin")
