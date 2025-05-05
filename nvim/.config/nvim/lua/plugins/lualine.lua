@@ -156,7 +156,7 @@ return {
 		-- configure lualine with modified theme
 		lualine.setup({
 			options = {
-				theme = "auto",
+				theme = require("themes/lualine_theme").theme(),
 				icons_enabled = true,
 				section_separators = { left = "", right = "" },
 				disabled_filetypes = {
