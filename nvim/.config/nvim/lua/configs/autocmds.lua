@@ -4,6 +4,10 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd("colorscheme tokyonight-night")
 
+--remove auto-comment
+vim.cmd("autocmd BufEnter * set formatoptions-=cro")
+vim.cmd("autocmd BufEnter * setlocal formatoptions-=cro")
+
 local function augroup(name)
 	return vim.api.nvim_create_augroup("lazyvim_" .. name, { clear = true })
 end
@@ -120,6 +124,7 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
 	end,
 })
 
+-- make buffer and lualine transparent
 vim.api.nvim_create_autocmd({ "UiEnter", "ColorScheme" }, {
 	callback = function()
 		-- 1.
