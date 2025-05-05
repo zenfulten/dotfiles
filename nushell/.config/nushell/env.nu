@@ -22,3 +22,5 @@ zoxide init nushell | save -f ~/.zoxide.nu
 
 # Add ~/.local/bin to the beginning of the PATH
 path add ($env.HOME | path join ".local" "bin")
+
+path add ($env.HOME | path join ".sdk" "jdk-24.0.1" "bin")
