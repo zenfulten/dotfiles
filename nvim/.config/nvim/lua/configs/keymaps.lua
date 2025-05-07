@@ -116,5 +116,5 @@ end, { desc = "whichkey query lookup" })
 local api = vim.api
 
 -- comment
-api.nvim_set_keymap("n", "<C-/>", "gtc", { desc = "Toggle Comment", noremap = false })
-api.nvim_set_keymap("v", "<C-/>", "goc", { desc = "Toggle Comment", noremap = false })
+api.nvim_set_keymap("n", "<C-c>", "gtc", { desc = "Toggle Comment", noremap = false })
+api.nvim_set_keymap("v", "<C-c>", "goc", { desc = "Toggle Comment", noremap = false })

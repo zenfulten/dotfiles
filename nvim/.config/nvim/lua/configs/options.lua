@@ -90,3 +90,14 @@ g.mapleader = " "
 g.background = "dark"
 
 vim.wo.number = true
+
+-- lsp setup
+
+-- provided by rust-analyzer.
+vim.g.lazyvim_rust_diagnostics = "rust-analyzer"
+
+-- Set to "pyright" to use the new LSP implementation version.
+vim.g.lazyvim_python_lsp = "pyright"
+
+-- Set to "ruff_lsp" to use the old LSP implementation version.
+vim.g.lazyvim_python_ruff = "ruff"
