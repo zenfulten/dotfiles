@@ -24,3 +24,10 @@ zoxide init nushell | save -f ~/.zoxide.nu
 path add ($env.HOME | path join ".local" "bin")
 
 path add ($env.HOME | path join ".sdk" "jdk-24.0.1" "bin")
+
+path add ($env.HOME | path join ".sdk" "go" "bin")
+
+path add ($env.HOME | path join ".sdk" "node" "bin")
+
+path add ($env.HOME | path join ".flutter" "flutter" "bin")
+
