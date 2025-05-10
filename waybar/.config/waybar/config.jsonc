@@ -5,7 +5,7 @@
   "height": 28,
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["network", "pulseaudio", "clock"],
+  "modules-right": ["network", "pulseaudio", "clock", "custom/power"],
   "clock": {
     "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -30,5 +30,10 @@
           "default": ["", "", " "]
       },
       // "on-click": "pavucontrol"
-  }
+  },
+  "custom/power": {
+    "format": "  ",
+    "tooltip": false,
+    "on-click": "sh -c '(sleep 0.5s; wlogout --protocol layer-shell)' & disown",
+  },
 }
