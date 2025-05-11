@@ -1,12 +1,3 @@
-/**
- *
- * Author : Aditya Shakya (adi1090x)
- * Github : @adi1090x
- * 
- * Rofi Theme File
- * Rofi Version: 1.7.3
- **/
-
 /*****----- Configuration -----*****/
 configuration {
 	modi:                       "drun,run,filebrowser,window";
@@ -22,12 +13,13 @@ configuration {
 /*****----- Global Properties -----*****/
 * {
     font:                        "JetBrains Mono Nerd Font 10";
-    background:                  #D0D0D0;
-    background-alt:              #E9E9E9;
-    foreground:                  #161616;
-    selected:                    #BEBEBE;
-    active:                      #999999;
-    urgent:                      #808080;
+   background:     transparent;        /* Transparent background */
+    background-alt: transparent;        /* Transparent alt background */
+    foreground:     #f8f8f2;            /* Off-white text */
+    selected:       #44475a;            /* Subtle blue-gray for selection */
+    active:         #6272a4;            /* Lavender/indigo for active */
+    urgent:         #ff5555;            /* Bright red for urgent items */
+
 }
 
 /*****----- Main Window -----*****/
@@ -71,7 +63,7 @@ inputbar {
     spacing:                     10px;
     padding:                     100px 60px;
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/images/f.png", width);
+    background-image:            url("~/.config/rofi/images/wichcraft.jpg", width);
     text-color:                  @foreground;
     orientation:                 horizontal;
     children:                    [ "textbox-prompt-colon", "entry", "dummy", "mode-switcher" ];
