@@ -150,8 +150,8 @@
 }
 
 #custom-power {
-    color: @red;
-    border-bottom: 2px solid @red;
+    color: @pink;
+    border-bottom: 2px solid @pink;
 }
 
 #clock.date {
