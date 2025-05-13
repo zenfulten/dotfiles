@@ -13,6 +13,13 @@
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
   "modules-right": ["network","bluetooth", "pulseaudio", "clock", "custom/power"],
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 25,
+    "separate-outputs": true,
+    "offscreen-css": true,
+    "offscreen-css-text": "(inactive)",
+  },
   "clock": {
     "interval": 1,
     //"format": " {:%I:%M %p}", // AM PM format
@@ -33,17 +40,57 @@
       }
     }
   },
+
+  "actions": {
+    "on-click-right": "mode",
+    "on-click-forward": "tz_up",
+    "on-click-backward": "tz_down",
+    "on-scroll-up": "shift_up",
+    "on-scroll-down": "shift_down"
+  },
+
+  "clock#2": {
+    //"format": " {:%I:%M %p}", // AM PM format
+    "format": "  {:%H:%M}", // 24H
+    "format-alt": "{:%A  |  %H:%M  |  %e %B}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+
+  "clock#3": {
+    //"format": "{:%I:%M %p - %d/%b}", //for AM/PM
+    "format": "{:%H:%M - %d/%b}", // 24H
+    "tooltip": false
+  },
+
+  "clock#4": {
+    "interval": 60,
+    //"format": "{:%B | %a %d, %Y | %I:%M %p}", // AM PM format
+    "format": "{:%B | %a %d, %Y | %H:%M}", // 24H
+    "format-alt": "{:%a %b %d, %G}",
+    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+  },
+
+  "clock#5": {
+    //"format": "{:%A, %I:%M %P}", // AM PM format
+    "format": "{:%a %d | %H:%M}", // 24H
+    "format-alt": "{:%A, %d %B, %Y (%R)}",
+    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+  },
+
   "network": {
-    "tooltip": true,
-    "format-wifi": " ",
-    "rotate": 0,
-    "format-ethernet": "󰈀 ",
-    "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFreque              ncy: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
-    "format-linked": "󰈀 {ifname} (No IP)",
-    "format-disconnected": "󰖪 ",
-    "tooltip-format-disconnected": "Disconnected",
-    "format-alt": "<span foreground='#99ffdd'> {bandwidthDownBytes}</span> <span foreground='#ffcc66'> {bandwidthUpBytes}</span>",
-    "interval": 2,
+    "format": "{ifname}",
+    "format-wifi": "{icon}",
+    "format-ethernet": "󰌘",
+    "format-disconnected": "󰌙",
+    "tooltip-format": "{ipaddr}  {bandwidthUpBits}  {bandwidthDownBits}",
+    "format-linked": "󰈁 {ifname} (No IP)",
+    "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
+    "tooltip-format-ethernet": "{ifname} 󰌘",
+    "tooltip-format-disconnected": "󰌙 Disconnected",
+    "max-length": 30,
+    "format-icons": [
+      "󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
+    ],
   },
   "bluetooth": {
     "format": " ",

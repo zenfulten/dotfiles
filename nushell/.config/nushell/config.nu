@@ -73,7 +73,7 @@ alias ga = git add .
 alias gpl = git pull
 alias gs = git status
 alias gcl = git clone
-alias gs = git restore
+alias gr = git restore
 
 #paru 
 alias pacman = paru
