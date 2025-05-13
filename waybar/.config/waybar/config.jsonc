@@ -76,21 +76,12 @@
     "format-alt": "{:%A, %d %B, %Y (%R)}",
     "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
   },
-
   "network": {
-    "format": "{ifname}",
-    "format-wifi": "{icon}",
-    "format-ethernet": "󰌘",
-    "format-disconnected": "󰌙",
-    "tooltip-format": "{ipaddr}  {bandwidthUpBits}  {bandwidthDownBits}",
-    "format-linked": "󰈁 {ifname} (No IP)",
-    "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
-    "tooltip-format-ethernet": "{ifname} 󰌘",
-    "tooltip-format-disconnected": "󰌙 Disconnected",
-    "max-length": 30,
-    "format-icons": [
-      "󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
-    ],
+    "format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",
+    "format-ethernet": "<span size='13000' foreground='#f5e0dc'>󰤭  </span> Disconnected",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
+    "tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
   },
   "bluetooth": {
     "format": " ",
@@ -99,7 +90,7 @@
     "tooltip-format": " {device_alias}",
     "tooltip-format-connected": "{device_enumerate}",
     "tooltip-format-enumerate-connected": " {device_alias} 󰂄{device_battery_percentage}%",
-    "tooltip": false,
+    "tooltip": true,
   },
 
   "pulseaudio": {
