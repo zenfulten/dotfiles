@@ -168,6 +168,10 @@
     color: @yellow;
     border-bottom: 2px solid @yellow;
 }
+#bluetooth {
+    color: @green;
+    border-bottom: 2px solid @green;
+}
 
 #idle_inhibitor {
     margin-right: 12px;
