@@ -12,7 +12,7 @@
   "margin-right": 10,
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["network","bluetooth", "pulseaudio", "clock", "custom/power"],
+  "modules-right": ["bluetooth","network", "pulseaudio", "clock", "custom/power"],
   "hyprland/window": {
     "format": "{}",
     "max-length": 25,
@@ -99,7 +99,7 @@
     "tooltip-format": " {device_alias}",
     "tooltip-format-connected": "{device_enumerate}",
     "tooltip-format-enumerate-connected": " {device_alias} 󰂄{device_battery_percentage}%",
-    "tooltip": true,
+    "tooltip": false,
   },
 
   "pulseaudio": {
