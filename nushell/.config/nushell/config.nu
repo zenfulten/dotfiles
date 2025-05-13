@@ -73,6 +73,18 @@ alias ga = git add .
 alias gpl = git pull
 alias gs = git status
 alias gcl = git clone
+alias gs = git restore
+
+#paru 
+alias pacman = paru
+alias pi = paru -S
+alias pss = paru -Ss
+alias pu = paru -Sy 
+alias puu = paru -Syu
+alias pr = paru -Rns
+alias pq = paru -Q
+alias pqi = paru -Qi 
+alias pe = paru -Qe
 
 # themes
 let dark_theme = {
