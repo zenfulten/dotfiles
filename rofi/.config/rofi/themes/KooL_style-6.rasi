@@ -40,9 +40,9 @@ window {
     fullscreen:                 false;
     transparency:               "real";
     cursor:                     "default";
-    spacing:                    0px;
-    border:                     2px;
-    border-radius:              30px;
+    spacing:                    10px;
+    border:                     1px;
+    border-radius:              25px;
     location:                   center;
     anchor:                     center;
 
@@ -78,7 +78,7 @@ entry {
     expand:                      false;
     width:                       300px;
     padding:                     10px;
-    border-radius:               12px;
+    border-radius:               50px;
     background-color:            @background;
     text-color:                  inherit;
     cursor:                      text;
