@@ -1,190 +1,208 @@
-/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
-/* KooL Hyprland Rofi Style 2 Dark */
-/* Source: https://github.com/adi1090x/rofi */
+/* Improved Rofi Configuration for Arch Linux */
 
-
-/* ****----- Configuration -----**** */
+/* Global Configuration */
 configuration {
-	modi:                       "drun,filebrowser,window";
+    modi:                       "drun,filebrowser,window";
     show-icons:                 true;
-    display-drun:               "  apps";
-    display-run:                "  term";
-    display-filebrowser:        "  files";
-    display-window:             "  window";
+    icon-theme:                 "Papirus";
+    font:                       "Fira Sans 12";
+    display-drun:               " Apps";
+    display-run:                " Run";
+    display-filebrowser:        " Files";
+    display-window:             " Windows";
     drun-display-format:        "{name}";
     window-format:              "{w} · {c} · {t}";
     hover-select:               true;
     me-select-entry:            "MouseSecondary";
     me-accept-entry:            "MousePrimary";
+    case-sensitive:             false;
+    cycle:                      true;
+    disable-history:            false;
 }
 
-/*****----- Global Properties -----*****/
+/* Theme Variables */
 * {
-
+    background:                 #1E1E2E;
+    background-alt:             #2E2E3E;
+    foreground:                 #CDD6F4;
+    selected:                   #89B4FA;
+    accent:                     #F38BA8;
+    border-color:               #45475A;
+    spacing:                    10px;
+    border-radius:              12px;
 }
 
-/*****----- Main Window -----*****/
+/* Main Window */
 window {
-    /* properties for window widget */
-    transparency:                "real";
-    location:                    center;
-    anchor:                      center;
-    fullscreen:                  false;
-    width:                       60%;
-    x-offset:                    0px;
-    y-offset:                    0px;
-
-    /* properties for all widgets */
-    enabled:                     true;
-    margin:                      0px;
-    padding:                     0px;
-    border-radius:               12px;
-    border:                      1px;
-    border-color:                gray/20%;
-    cursor:                      "default";
-    background-color: 			 transparent;
+    transparency:               "real";
+    location:                   center;
+    anchor:                     center;
+    fullscreen:                 false;
+    width:                      60%;
+    x-offset:                   0px;
+    y-offset:                   0px;
+    margin:                     0px;
+    padding:                    10px;
+    border:                     2px solid;
+    border-color:               @border-color;
+    border-radius:              @border-radius;
+    background-color:           #1E1E2EE6; /* 90% opacity */
+    cursor:                     "default";
 }
 
-/*****----- Main Box -----*****/
+/* Main Box */
 mainbox {
-    enabled:                     true;
-    spacing:                     20px;
-    margin:                      10px;
-    padding:                     15px;
-    border-radius:               12px;
-    background-color:            transparent;
-    children:                    [ "inputbar", "mode-switcher", "message", "listview" ];
+    enabled:                    true;
+    spacing:                    @spacing;
+    margin:                     10px;
+    padding:                    15px;
+    border-radius:              @border-radius;
+    background-color:           transparent;
+    children:                   [ "inputbar", "mode-switcher", "message", "listview" ];
 }
 
-/*****----- Inputbar -----*****/
+/* Input Bar */
 inputbar {
-    enabled:                     true;
-    spacing:                     0px;
-    margin:                      0px;
-    padding:                     20px 0px 20px 0px;
-    border:                      0px 0px 2px 0px;
-    border-radius:               0px;
-    border-color:                gray/20%;
-    background-color:            transparent;
-    children:                    [ "entry" ];
+    enabled:                    true;
+    spacing:                    10px;
+    margin:                     0px 10%;
+    padding:                    15px;
+    border:                     0px 0px 2px 0px;
+    border-radius:              8px;
+    border-color:               @border-color;
+    background-color:           @background-alt;
+    children:                   [ "entry" ];
 }
 
 entry {
-    enabled:                     true;
-    background-color:            transparent;
-    text-color:                  white/75%;
-    cursor:                      text;
-    placeholder:                 "Search";
-    placeholder-color:           inherit;
-    vertical-align:              0.5;
-    horizontal-align:            0.5;
-}
-
-/*****----- Listview -----*****/
-listview {
-    enabled:                     true;
-    columns:                     3;
-    lines:                       3;
-    cycle:                       true;
-    dynamic:                     true;
-    scrollbar:                   false;
-    layout:                      vertical;
-    reverse:                     false;
-    fixed-height:                true;
-    fixed-columns:               true;
-    
-    spacing:                     40px;
-    margin:                      0px;
-    padding:                     0px;
-    border:                      0px solid;
-    background-color:            transparent;
-    cursor:                      "default";
-}
-
-/* ---- Scrollbar ---- */
-scrollbar {
-    border:						1px;
-    border-radius:				10px;
-    background-color:				inherit;
-    handle-color: 				#719DF9;
-    handle-width: 				2px ;
-    padding:      				0;
-}
-
-/*****----- Elements -----*****/
-element {
-    enabled:                     true;
-    spacing:                     10px;
-    margin:                      10px;
-    padding:                     20px;
-    border:                      1px solid;
-    border-radius:               8px;
-    border-color:                white/30%;
-    background-color:            transparent;
-    text-color:                  white;
-    cursor:                      pointer;
-}
-element normal.active {
+    enabled:                    true;
     background-color:           transparent;
-    text-color:                  black;
+    text-color:                 @foreground;
+    cursor:                     text;
+    placeholder:                "Search...";
+    placeholder-color:          #CDD6F4B3; /* 70% opacity */
+    vertical-align:             0.5;
+    horizontal-align:           0.5;
 }
 
-element-text selected,
-element selected.normal {
-    background-color:           transparent;
-    text-color:                  gray;
-}
-element selected.active {
-    background-color:           transparent;
-    text-color:                  white;
-}
-element-icon {
-    background-color:            transparent;
-    size:                        48px;
-    cursor:                      inherit;
-}
-element-text {
-    background-color:            inherit;
-    text-color:                  inherit;
-    cursor:                      inherit;
-    vertical-align:              0.5;
-    horizontal-align:            0.0;
+/* Mode Switcher */
+mode-switcher {
+    enabled:                    true;
+    expand:                     false;
+    spacing:                    15px;
+    margin:                     0px 10%;
+    padding:                    5px;
+    background-color:           @background-alt;
+    border-radius:              8px;
+    text-color:                 @foreground;
 }
 
-/*****----- Mode Switcher -----*****/
-mode-switcher{
-    enabled:                     true;
-    expand:                      false;
-    spacing:                     20px;
-    margin:                      0px 10%;
-    background-color:            transparent;
-    text-color:                  white;
-}
 button {
-    padding:                     6px;
-    border:                      0px solid;
-    border-radius:               100%;
-    background-color:            transparent;
-    text-color:                  inherit;
-    cursor:                      pointer;
-}
-button selected {
-    background-color:            transparent;
-    text-color:                  inherit;
+    padding:                    8px;
+    border:                     0px;
+    border-radius:              50%;
+    background-color:           transparent;
+    text-color:                 @foreground;
+    cursor:                     pointer;
 }
 
-/*****----- Message -----*****/
+button selected {
+    background-color:           @selected;
+    text-color:                 @background;
+}
+
+/* Listview */
+listview {
+    enabled:                    true;
+    columns:                    3;
+    lines:                      3;
+    cycle:                      true;
+    dynamic:                    true;
+    scrollbar:                  true;
+    layout:                     vertical;
+    reverse:                    false;
+    fixed-height:               true;
+    fixed-columns:              true;
+    spacing:                    15px;
+    margin:                     10px;
+    padding:                    10px;
+    border:                     0px;
+    background-color:           transparent;
+    cursor:                     "default";
+}
+
+/* Scrollbar */
+scrollbar {
+    width:                      4px;
+    handle-width:               8px;
+    border:                     0px;
+    border-radius:              8px;
+    background-color:           @background-alt;
+    handle-color:               @accent;
+    padding:                    0px;
+}
+
+/* Elements */
+element {
+    enabled:                    true;
+    spacing:                    10px;
+    margin:                     5px;
+    padding:                    15px;
+    border:                     1px solid;
+    border-radius:              8px;
+    border-color:               @border-color;
+    background-color:           #2E2E3ECC; /* 80% opacity */
+    text-color:                 @foreground;
+    cursor:                     pointer;
+}
+
+element normal.active {
+    background-color:           #89B4FACC; /* 80% opacity */
+    text-color:                 @foreground;
+}
+
+element selected.normal {
+    background-color:           @selected;
+    text-color:                 @background;
+}
+
+element selected.active {
+    background-color:           @accent;
+    text-color:                 @background;
+}
+
+element-icon {
+    size:                       48px;
+    background-color:           transparent;
+    cursor:                     inherit;
+}
+
+element-text {
+    background-color:           inherit;
+    text-color:                 inherit;
+    cursor:                     inherit;
+    vertical-align:             0.5;
+    horizontal-align:           0.0;
+}
+
+/* Message */
 message {
-    background-color:            transparent;
-    border:                      0px;
+    background-color:           @background-alt;
+    border:                     0px;
+    padding:                    10px;
+    border-radius:              8px;
 }
+
 error-message {
-    padding:                     20px;
+    padding:                    15px;
+    background-color:           @accent;
+    text-color:                 @background;
 }
+
 textbox {
-    padding:                     10px;
-    background-color:            transparent;
-    text-color:                  inherit;
-    vertical-align:              0.5;
-    horizontal-align:            0.5;
+    padding:                    10px;
+    background-color:           transparent;
+    text-color:                 @foreground;
+    vertical-align:             0.5;
+    horizontal-align:           0.5;
 }
