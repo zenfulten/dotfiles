@@ -39,6 +39,8 @@ window {
     margin:                      0px;
     padding:                     0px;
     border-radius:               12px;
+    border:                      1px;
+    border-color:                gray/20%;
     cursor:                      "default";
     background-color: 			 transparent;
 }
@@ -50,7 +52,7 @@ mainbox {
     margin:                      10px;
     padding:                     15px;
     border-radius:               12px;
-    background-color:            black/90%;
+    background-color:            transparent;
     children:                    [ "inputbar", "mode-switcher", "message", "listview" ];
 }
 
@@ -63,16 +65,16 @@ inputbar {
     border:                      0px 0px 2px 0px;
     border-radius:               0px;
     border-color:                gray/20%;
-    background-color:            black/50%;
+    background-color:            transparent;
     children:                    [ "entry" ];
 }
 
 entry {
     enabled:                     true;
-    background-color:            black/50%;
+    background-color:            transparent;
     text-color:                  white/75%;
     cursor:                      text;
-    placeholder:                 "Type to search";
+    placeholder:                 "Search";
     placeholder-color:           inherit;
     vertical-align:              0.5;
     horizontal-align:            0.5;
@@ -118,22 +120,22 @@ element {
     border:                      1px solid;
     border-radius:               8px;
     border-color:                white/30%;
-    background-color:            black;
+    background-color:            transparent;
     text-color:                  white;
     cursor:                      pointer;
 }
 element normal.active {
-    background-color:           #67FF80;
+    background-color:           transparent;
     text-color:                  black;
 }
 
 element-text selected,
 element selected.normal {
-    background-color:           #c19419;
-    text-color:                  black;
+    background-color:           transparent;
+    text-color:                  gray;
 }
 element selected.active {
-    background-color:           #FF7F7C;
+    background-color:           transparent;
     text-color:                  white;
 }
 element-icon {
@@ -162,12 +164,12 @@ button {
     padding:                     6px;
     border:                      0px solid;
     border-radius:               100%;
-    background-color:            #719DF9;
+    background-color:            transparent;
     text-color:                  inherit;
     cursor:                      pointer;
 }
 button selected {
-    background-color:            #F37277;
+    background-color:            transparent;
     text-color:                  inherit;
 }
 
@@ -181,7 +183,7 @@ error-message {
 }
 textbox {
     padding:                     10px;
-    background-color:            #719DF9;
+    background-color:            transparent;
     text-color:                  inherit;
     vertical-align:              0.5;
     horizontal-align:            0.5;
