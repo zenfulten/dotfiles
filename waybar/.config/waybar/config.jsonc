@@ -4,7 +4,6 @@
   "mod": "dock",
   "exclusive": true,
   "passthrough": false,
-  "position": "top",
   "spacing": 3,
   "fixed-center": true,
   "ipc": true,
