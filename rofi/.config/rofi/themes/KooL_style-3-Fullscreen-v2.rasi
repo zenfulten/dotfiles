@@ -10,7 +10,7 @@ configuration {
     display-run:                "  term";
     display-filebrowser:        "  files";
     display-window:             "  window";
-	display-ssh:                " SSH";
+  display-ssh:                " SSH";
     drun-display-format:        "{name}";
     window-format:              "{w} · {c} · {t}";
     hover-select:               true;
@@ -64,25 +64,26 @@ window {
     fullscreen:                  true;
     x-offset:                    0px;
     y-offset:                    0px;
-
     enabled:                     true;
-    margin:                      0px;
+    margin:                      30px;
     padding:                     0px;
-    border:                      0px solid;
-    border-radius:               0px;
-    border-color:                @selected;
+    border:                      1px;
+    border-radius:               30px;
+    border-color:                grey;
     background-color:            black / 10%;
     cursor:                      "default";
+    background-image:            url("~/Images/Fav/wichcraft.jpg", width);
+
 }
 
 /*****----- Main Box -----*****/
 mainbox {
     enabled:                     true;
-    spacing:                     100px;
+    spacing:                     0px;
     margin:                      0px;
-    padding:                     100px 225px;
+    padding:                     10px 10px;
     border:                      0px solid;
-    border-radius:               0px 0px 0px 0px;
+    border-radius:               0px;
     border-color:                @selected;
     background-color:            transparent;
     children:                    [ "inputbar", "message", "listview" ];
@@ -90,12 +91,13 @@ mainbox {
 
 /*****----- Inputbar -----*****/
 inputbar {
+    location:                    center;
     enabled:                     true;
-    spacing:                     10px;
-    margin:                      0% 28%;
-    padding:                     10px;
+    spacing:                     30px;
+    margin:                      3% 8%;
+    padding:                     15px;
     border:                      1px solid;
-    border-radius:               6px;
+    border-radius:               60px;
     border-color:                white / 25%;
     background-color:            white / 5%;
     text-color:                  @foreground;
@@ -119,7 +121,7 @@ entry {
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      text;
-    placeholder:                 "  Search  👀 NOTE: CTRL TAB to change MODE";
+    placeholder:                 " ";
     placeholder-color:           inherit;
 }
 
@@ -180,10 +182,10 @@ element selected.normal {
 
 element-text selected,
 element selected.selected {
-    background-color:            white/50%;
+    background-color:            white/10%;
     text-color:                  @foreground;
-	border-radius:				 20px;
-	padding:					 20px;
+    border-radius:				 50px;
+  	padding:					 10px;
 }
 
 element-icon {
@@ -199,7 +201,7 @@ element-text {
     cursor:                      inherit;
     vertical-align:              0.5;
     horizontal-align:            0.5;
-	padding: 					 30px;
+	  padding: 					 30px;
 }
 
 /*****----- Message -----*****/
