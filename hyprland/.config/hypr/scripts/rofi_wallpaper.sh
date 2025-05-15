@@ -11,4 +11,5 @@ WALL=$(find "$WALL_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" \) | sort | 
 if [[ -f "$WALL" ]]; then
     $HYPCTL hyprpaper preload "$WALL"
     $HYPCTL hyprpaper wallpaper "$MONITOR,$WALL"
+    notify-send -u low -i "$WALL"  "Rofi wallpaper applied..."
 fi
