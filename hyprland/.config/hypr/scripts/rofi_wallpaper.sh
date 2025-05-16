@@ -14,12 +14,26 @@ fi
 # Initialize ROFI_INPUT
 ROFI_INPUT=""
 
+# Initialize ROFI_INPUT
+ROFI_INPUT=""
+
+# Check if WALL_DIR exists
+if [ ! -d "$WALL_DIR" ]; then
+    echo "Error: Wallpaper directory '$WALL_DIR' does not exist."
+    exit 1
+fi
+
+# Initialize ROFI_INPUT
+ROFI_INPUT=""
+
 # Find image files and prepare input for rofi
 while IFS= read -r -d $'\0' file; do
-    # Escape single quotes in the file path for rofi
-    escaped_file=$(printf '%s' "$file" | sed "s/'/'\\\\''/g")
-    # Add the file path and icon (full path for image preview)
-    ROFI_INPUT+="$escaped_file\x00icon\x1f$file\n"
+    # Extract the filename using basename
+    filename=$(basename "$file")
+    # Escape single quotes in the filename for rofi (optional, but good practice)
+    escaped_filename=$(printf '%s' "$filename" | sed "s/'/'\\\\''/g")
+    # Add the filename and icon (full path for image preview)
+    ROFI_INPUT+="$escaped_filename\x00icon\x1f$file\n"
 done < <(find "$WALL_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" \) -print0 | sort -z)
 
 # Debug: Print ROFI_INPUT to check formatting
@@ -51,9 +65,11 @@ fi
 
 # Set it
 if [[ -n "$WALL" ]]; then
-    if [[ -f "$WALL" ]]; then
-        $HYPCTL hyprpaper preload "$WALL"
-        $HYPCTL hyprpaper wallpaper "$MONITOR,$WALL"
-        notify-send -u low -i "$WALL" "Rofi wallpaper applied..."
+    # Construct the full path using WALL_DIR and the filename
+    FULL_WALL="$WALL_DIR/$WALL"
+    if [[ -f "$FULL_WALL" ]]; then
+        $HYPCTL hyprpaper preload "$FULL_WALL"
+        $HYPCTL hyprpaper wallpaper "$MONITOR,$FULL_WALL"
+        notify-send -u low -i "$FULL_WALL" "Rofi wallpaper applied..."
     fi
 fi
