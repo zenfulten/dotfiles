@@ -189,11 +189,11 @@ element normal.active {
 }
 
 element selected.normal {
-    border:                     0px 3px 0px 3px;
+    border:                     1px 1px 1px 1px;
     border-radius:              8px; /* Sharp corners */
     border-color:               @gradient-start;
-    background-color:           #89B4FACC; /* Blue with 80% opacity */
-    text-color:                 @text-selected;
+    background-color:           transparent; /* Blue with 80% opacity */
+    text-color:                 @background-alt;
 }
 
 element selected.urgent {
