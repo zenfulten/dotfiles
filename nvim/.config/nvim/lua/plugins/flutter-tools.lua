@@ -39,10 +39,10 @@ return {
 					enableSnippets = true,
 				},
 			},
-			debugger = {
-				enabled = true,
-				run_via_dap = false,
-			},
+			-- debugger = {
+			-- 	enabled = true,
+			-- 	run_via_dap = false,
+			-- },
 			-- dev_log = {
 			--   enabled = true,
 			--   open_cmd = "tabedit", -- command to use to open the log buffer
