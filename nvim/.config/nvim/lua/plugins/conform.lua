@@ -10,6 +10,8 @@ return {
 				dart = { "dartls" },
 				go = { "goimports", "gofumpt" },
 				python = { "ruff" },
+				cpp = { "clang_format" },
+				c = { "clang_format" },
 				-- css = { "prettier" },
 				-- html = { "prettier" },
 			},
