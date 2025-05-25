@@ -26,7 +26,7 @@ return {
 
 			local lspconfig = require("lspconfig")
 
-			local servers = { "lua_ls", "dartls", "gopls", "pyright", "rust_analyzer" } -- rust_analyzer need rust-src need installed
+			local servers = { "lua_ls", "dartls", "gopls", "pyright", "rust_analyzer", "clangd" } -- rust_analyzer need rust-src need installed
 			for _, lsp in ipairs(servers) do
 				lspconfig[lsp].setup({
 					capabilities = capabilities,
