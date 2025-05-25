@@ -4,8 +4,6 @@ format = "$character"
 success_symbol = "[❯](bold green)"
 error_symbol = "[➜](bold red)"
 
-add_newline = false
-
 [palettes.nord]
 dark_blue = '#5E81AC'
 blue = '#81A1C1'
