@@ -49,7 +49,7 @@ fi
 # Rofi configuration
 ROFI_FLAGS="-dmenu -i -p 'Select Wallpaper'"
 # Ensure this theme supports image previews (e.g., rofi-theme-selector or custom)
-ROFI_THEME="-theme ~/.config/rofi/themes/KooL_style-1.rasi"
+ROFI_THEME="-theme ~/.config/rofi/themes/selecting.rasi"
 
 # Choose wallpaper using rofi with image previews
 # The 'echo -ne' is crucial for handling the null-separated input correctly with rofi
