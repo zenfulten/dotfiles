@@ -1,4 +1,4 @@
-@import "theme"
+@import "../styles/theme"
 
 configuration {
     show-icons:                  true;
