@@ -5,15 +5,6 @@ MAGICK="magick"
 # Directory containing wallpapers (ensure WALL_DIR is set)
 : "${WALL_DIR:=$HOME/Images/Fav}"
 
-# Check if WALL_DIR exists
-if [ ! -d "$WALL_DIR" ]; then
-    echo "Error: Wallpaper directory '$WALL_DIR' does not exist."
-    exit 1
-fi
-
-# Initialize ROFI_INPUT
-ROFI_INPUT=""
-
 # Initialize ROFI_INPUT
 ROFI_INPUT=""
 
@@ -22,9 +13,6 @@ if [ ! -d "$WALL_DIR" ]; then
     echo "Error: Wallpaper directory '$WALL_DIR' does not exist."
     exit 1
 fi
-
-# Initialize ROFI_INPUT
-ROFI_INPUT=""
 
 # Find image files and prepare input for rofi
 while IFS= read -r -d $'\0' file; do
