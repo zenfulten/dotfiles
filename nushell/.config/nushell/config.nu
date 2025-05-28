@@ -64,7 +64,7 @@ alias nv = neovide
 alias v = nvim
 
 # fastfetch
-alias fs = fastfetch --logo /home/rio/Images/fastfetch/space.png
+alias fs = fastfetch --logo ~/.config/fastfetch/fastfetch/space.png
 
 # Git
 alias gc = git commit -m
@@ -74,6 +74,7 @@ alias gpl = git pull
 alias gs = git status
 alias gcl = git clone
 alias gr = git restore
+alias gi = git init
 
 #paru 
 alias pacman = paru
