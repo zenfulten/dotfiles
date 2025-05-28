@@ -69,7 +69,7 @@ inputbar {
     border-radius:               25px;
     orientation:                 horizontal;
     children:                    ["entry", "dummy", "mode-switcher" ];
-    background-image:            url("~/Images/Fav/wichcraft.jpg", width);
+    background-image:            url("~/.config/images/current_wallpaper", width);
 }
 
 /* ---- Entry input ---- */

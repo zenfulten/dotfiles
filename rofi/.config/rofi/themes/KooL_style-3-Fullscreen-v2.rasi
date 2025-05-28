@@ -70,7 +70,7 @@ window {
     border-color:               @border-color;
     background-color:           #1E1E2E99; /* 60% opacity */
     cursor:                     "default";
-    background-image:           url("~/Images/Fav/wichcraft.jpg", width);
+    background-image:           url("~/.config/images/current_wallpaper", width);
 }
 
 /*****----- Main Box -----*****/

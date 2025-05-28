@@ -10,6 +10,11 @@ SWWW_CMD="/usr/bin/swww"
 # Default to $HOME/Images/Fav if WALL_DIR is not already set
 : "${WALL_DIR:=$HOME/Images/img}"
 
+# Define the target directory for the current wallpaper copy
+TARGET_WALLPAPER_DIR="$HOME/.config/images"
+# Define the generic symlink path for Rofi and other apps
+GENERIC_WALLPAPER_SYMLINK="$TARGET_WALLPAPER_DIR/current_wallpaper"
+
 # Initialize ROFI_INPUT
 ROFI_INPUT=""
 
@@ -37,7 +42,8 @@ while IFS= read -r -d $'\0' file; do
     escaped_filename=$(printf '%s' "$filename" | sed "s/'/'\\\\''/g")
     # Add the filename and icon (full path for image preview)
     ROFI_INPUT+="$escaped_filename\x00icon\x1f$file\n"
-done < <(find "$WALL_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" \) -print0 | sort -z)
+done < <(find "$WALL_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" -o -iname "*.gif" -o -iname "*.bmp" -o -iname "*.tiff" \) -print0 | sort -z)
+
 
 # Check if ROFI_INPUT is empty
 if [ -z "$ROFI_INPUT" ]; then
@@ -63,6 +69,32 @@ if [ -n "$WALL" ]; then
 
     # Verify the selected file actually exists
     if [[ -f "$FULL_WALL" ]]; then
+        # --- Image Copying Logic ---
+        # Create the target directory if it doesn't exist
+        mkdir -p "$TARGET_WALLPAPER_DIR"
+
+        # Get the extension of the selected wallpaper
+        EXTENSION="${FULL_WALL##*.}"
+        TARGET_IMAGE="$TARGET_WALLPAPER_DIR/image.$EXTENSION"
+
+        # Remove any existing 'image' files with various extensions in the target directory
+        rm -f "$TARGET_WALLPAPER_DIR/image.jpg" \
+              "$TARGET_WALLPAPER_DIR/image.jpeg" \
+              "$TARGET_WALLPAPER_DIR/image.png" \
+              "$TARGET_WALLPAPER_DIR/image.gif" \
+              "$TARGET_WALLPAPER_DIR/image.bmp" \
+              "$TARGET_WALLPAPER_DIR/image.tiff"
+
+        # Copy the new wallpaper to the target location with its original extension
+        cp "$FULL_WALL" "$TARGET_IMAGE"
+
+        # --- Symlink Creation Logic ---
+        # Remove any old symlink or file named 'current_wallpaper'
+        rm -f "$GENERIC_WALLPAPER_SYMLINK"
+        # Create a new symlink pointing to the newly copied image
+        ln -s "$TARGET_IMAGE" "$GENERIC_WALLPAPER_SYMLINK"
+        # --- End Symlink Creation Logic ---
+
         # Apply the wallpaper using swww with a transition animation.
         # Common transition types: "fade", "grow", "wipe", "outer", "simple", "random"
         # Adjust --transition-step and --transition-fps for desired animation.
@@ -82,4 +114,3 @@ else
     notify-send -u low "Wallpaper Script" "No wallpaper selected."
     exit 1
 fi
-
