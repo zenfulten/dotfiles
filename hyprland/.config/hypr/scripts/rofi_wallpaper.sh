@@ -8,7 +8,7 @@ SWWW_CMD="/usr/bin/swww"
 
 # Directory containing wallpapers (ensure WALL_DIR is set)
 # Default to $HOME/Images/Fav if WALL_DIR is not already set
-: "${WALL_DIR:=$HOME/Images/Fav}"
+: "${WALL_DIR:=$HOME/Images/img}"
 
 # Initialize ROFI_INPUT
 ROFI_INPUT=""
