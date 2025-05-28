@@ -8,7 +8,7 @@ SWWW_CMD="/usr/bin/swww"
 
 # Directory containing wallpapers (ensure WALL_DIR is set)
 # Default to $HOME/Images/Fav if WALL_DIR is not already set
-: "${WALL_DIR:=$HOME/Images/img}"
+: "${WALL_DIR:=$HOME/.config/images/img}"
 
 # Define the target directory for the current wallpaper copy
 TARGET_WALLPAPER_DIR="$HOME/.config/images"
