@@ -101,6 +101,7 @@ if [ -n "$SELECTED_THEME" ]; then
         # --configured: indicates that the path is to a Kitty config file (theme).
         kitty @ set-colors --all --configured "$FULL_THEME_PATH"
         send_notification "Kitty Theme Applied" "Theme changed to: $SELECTED_THEME"
+        cp $FULL_THEME_PATH ~/.config/kitty/current-theme.conf
     else
         send_notification "Kitty Theme Error" "Selected theme file not found: $FULL_THEME_PATH"
         echo "Error: Selected theme file not found at $FULL_THEME_PATH"
