@@ -66,6 +66,9 @@ alias v = nvim
 # fastfetch
 alias fs = fastfetch --logo ~/.config/fastfetch/fastfetch/space.png
 
+#kitty-theme
+alias ktheme = ~/.config/hypr/scripts/kitty-theme.sh
+
 # Git
 alias gc = git commit -m
 alias gp = git push

@@ -21,7 +21,7 @@ KITTY_CONF="${HOME}/.config/kitty/kitty.conf"
 # Rofi configuration
 ROFI_FLAGS="-dmenu -i -p 'Select Kitty Theme'"
 # Adjust to your Rofi theme if needed
-ROFI_THEME="-theme ~/.config/rofi/themes/selecting.rasi"
+ROFI_THEME="-theme ~/.config/rofi/themes/config.rasi"
 
 # Initialize Rofi input string
 ROFI_INPUT=""
