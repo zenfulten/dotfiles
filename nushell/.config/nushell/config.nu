@@ -69,6 +69,12 @@ alias fs = fastfetch --logo ~/.config/fastfetch/fastfetch/space.png
 #kitty-theme
 alias ktheme = ~/.config/hypr/scripts/kitty-theme.sh
 
+#hyprland keybinds
+alias hint = ~/.config/hypr/scripts/key.sh
+
+#nvim keybinds
+alias n-hint = ~/.config/nvim/lua/scripts/hint.sh
+
 # Git
 alias gc = git commit -m
 alias gp = git push
