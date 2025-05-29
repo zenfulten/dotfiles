@@ -38,30 +38,85 @@ def --env y [...args] {
 
 #alias name = value
 
-# exit
+# Exit
 alias e = exit
-#ls 
+
+# Listing files (using lsd or ls)
 alias l = lsd
 alias ll = lsd -l
 alias la = lsd -a
 alias lla = lsd -la
 
-#cd path/to/directory
+# Change directory with z (jump around)
 alias cd = z
 
-#cat 
+# File contents viewer
 alias cat = bat
 
-#clear
+# Clear screen
 alias cls = clear
 
-#pwd 
+# Print working directory
 alias p = pwd
 
-#neovide 
+# Neovim and Neovide editors
 alias nv = neovide
-
 alias v = nvim
+
+# Git shortcuts
+alias gc = git commit -m
+alias gp = git push
+alias ga = git add .
+alias gpl = git pull
+alias gs = git status
+alias gcl = git clone
+alias gr = git restore
+alias gi = git init
+
+# Package managers (Paru/AUR helper)
+alias pacman = paru
+alias pi = paru -S
+alias pss = paru -Ss
+alias pu = paru -Sy
+alias puu = paru -Syu
+alias pr = paru -Rns
+alias pq = paru -Q
+alias pqi = paru -Qi
+alias pe = paru -Qe
+
+# System utilities
+alias df = df -h
+alias du = du -h
+alias free = free -h
+alias top = btop
+
+# Network utilities
+alias ip = ip a
+alias ping = ping -c 5
+
+# Disk utilities
+alias mount = mount | column -t
+alias umount = umount
+
+# Systemctl shortcuts
+alias ss = systemctl status
+alias sr = systemctl restart
+alias ssr = systemctl start
+alias ssp = systemctl stop
+alias sen = systemctl enable
+alias sdis = systemctl disable
+
+# Docker aliases
+alias dps = docker ps
+alias di = docker images
+alias dstart = docker start
+alias dstop = docker stop
+alias drm = docker rm
+alias drmi = docker rmi
+
+# Misc
+alias hist = history
+alias cls = clear
 
 # fastfetch
 alias fs = fastfetch --logo ~/.config/fastfetch/fastfetch/space.png
@@ -77,27 +132,6 @@ alias n-hint = ~/.config/nvim/lua/scripts/hint.sh
 
 #shell 
 source ~/.config/nushell/random-script.nu
-
-# Git
-alias gc = git commit -m
-alias gp = git push
-alias ga = git add .
-alias gpl = git pull
-alias gs = git status
-alias gcl = git clone
-alias gr = git restore
-alias gi = git init
-
-#paru 
-alias pacman = paru
-alias pi = paru -S
-alias pss = paru -Ss
-alias pu = paru -Sy 
-alias puu = paru -Syu
-alias pr = paru -Rns
-alias pq = paru -Q
-alias pqi = paru -Qi 
-alias pe = paru -Qe
 
 # themes
 let dark_theme = {

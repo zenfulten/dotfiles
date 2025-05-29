@@ -65,6 +65,7 @@ SUPER + SHIFT + B : Rofi Bluetooth Connect
 
 ⌨️ Hyprland Keybinds
 SUPER + SHIFT + I : Hypr Key Bind
+SUPER + SHIFT + A : Alias hint
 
 🎨 Rofi & Themes
 SUPER + D         : App Launcher (Rofi)
