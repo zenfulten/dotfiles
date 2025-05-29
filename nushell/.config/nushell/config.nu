@@ -75,6 +75,9 @@ alias hint = ~/.config/hypr/scripts/key.sh
 #nvim keybinds
 alias n-hint = ~/.config/nvim/lua/scripts/hint.sh
 
+#shell 
+source ~/.config/nushell/random-script.nu
+
 # Git
 alias gc = git commit -m
 alias gp = git push
