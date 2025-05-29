@@ -83,7 +83,7 @@ window#waybar.hidden {
 #mode,
 
 #clock {
-  color: @yellow;
+  color: @lavender;
   padding-right: 4px;
   padding-left: 4px;
 }
@@ -101,7 +101,7 @@ window#waybar.hidden {
 }
 
 #network {
-  color: @teal;
+  color: @sky;
   padding-right: 4px;
   padding-left: 4px;
 }
