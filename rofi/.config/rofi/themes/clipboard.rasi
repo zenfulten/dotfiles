@@ -52,7 +52,7 @@ wallframe {
     padding:                     0em;
     expand:                      false;
     background-color:            @main-bg;
-    background-image:            url("~/.cache/hyde/wall.quad", width);
+    background-image:            url("~/.config/images/current_wallpaper", height);
 }
 
 

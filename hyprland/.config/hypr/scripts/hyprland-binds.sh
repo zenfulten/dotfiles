@@ -75,6 +75,7 @@ SUPER + SHIFT + B                     : Rofi Bluetooth Connect
 SUPER + SHIFT + I                     : Hypr Key Bind
 SUPER + SHIFT + A                     : Alias hint
 SUPER + SHIPT + Y                     : Yazi Key Bind
+SUPER + ALT + E                       : Nvim Key Bind
 
           🎨 Rofi & Themes
 
