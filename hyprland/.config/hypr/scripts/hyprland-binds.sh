@@ -70,6 +70,10 @@ SUPER + SHIFT + P : Clipboard Manager
 SUPER + ALT + W                       : Rofi Wifi Connect
 SUPER + SHIFT + B                     : Rofi Bluetooth Connect
 
+          🎶 Music
+
+SUPER + SHIFT + O                     : Rofi Play Music
+
           ⌨️ Hyprland Keybinds
 
 SUPER + SHIFT + I                     : Hypr Key Bind
