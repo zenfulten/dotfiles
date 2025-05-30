@@ -21,12 +21,12 @@
 
 
 //@theme "~/.config/rofi/themes/config.rasi"
-//@theme "~/.config/rofi/themes/style-1.rasi"
-//@theme "~/.config/rofi/themes/config.rasi"
 //@theme "~/.config/rofi/themes/KooL_style-4.rasi"
 //@theme "~/.config/rofi/themes/config.rasi"
 //@theme "~/.config/rofi/themes/mocha.rasi"
 //@theme "~/.config/rofi/themes/config.rasi"
 //@theme "~/.config/rofi/themes/KooL_style-4.rasi"
 //@theme "~/.config/rofi/themes/clipboard.rasi"
+//@theme "~/.config/rofi/themes/config.rasi"
+//@theme "~/.config/rofi/themes/rofi-wall.rasi"
 @theme "~/.config/rofi/themes/config.rasi"
